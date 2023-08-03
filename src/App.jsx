@@ -1,7 +1,6 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+// import { Router, Routes, Route } from "react-router-dom";
 
 import IntroducePage from "../Page/introducePage";
 import EducationAndWorkPage from "../Page/educationAndWorkPage";
@@ -13,14 +12,20 @@ function App() {
   return (
     <div className="App">
       <IntroducePage />
-      <hr />
       <EducationAndWorkPage />
-      <hr />
       <MySkillPage />
-      <hr />
       <PortfolioPage />
-      <hr />
       <ContactPage />
+
+      {/* <Router>
+        <Routes>
+          <Route path="/" element={<IntroducePage />} /> */}
+      {/* <Route path="/EducationAndWork" element={<EducationAndWorkPage />} /> */}
+      {/* <Route path="/skill" element={<MySkillPage />} /> */}
+      {/* <Route path="/portfolio" element={<PortfolioPage />} /> */}
+      {/* <Route path="/contact" element={<ContactPage />} /> */}
+      {/* </Routes>
+      </Router> */}
     </div>
   );
 }
