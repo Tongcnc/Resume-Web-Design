@@ -1,6 +1,7 @@
 import NavigationBar from "../components/navigationBar";
 import "../src/App.css";
 import { myCV } from "../Info/allInfo";
+import { Link } from "react-router-dom";
 
 function IntroducePage() {
   return (
@@ -17,7 +18,12 @@ function IntroducePage() {
         </p>
         <div className="intro-button">
           <button>Hire me</button>
-          <button>Download CV</button>
+          <Link
+            to="https://drive.google.com/file/d/1A6mRnAAOKNRBNzcuT9gEHSXRZ7lQRomG/view?usp=sharing"
+            target="_blank"
+          >
+            <button>Download CV</button>
+          </Link>
         </div>
       </div>
     </div>

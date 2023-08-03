@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-// import { Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import IntroducePage from "../Page/introducePage";
 import EducationAndWorkPage from "../Page/educationAndWorkPage";
@@ -11,21 +11,24 @@ import ContactPage from "../Page/contactPage";
 function App() {
   return (
     <div className="App">
-      <IntroducePage />
+      {/* <IntroducePage />
       <EducationAndWorkPage />
       <MySkillPage />
       <PortfolioPage />
-      <ContactPage />
+      <ContactPage /> */}
 
-      {/* <Router>
+      <Router>
         <Routes>
-          <Route path="/" element={<IntroducePage />} /> */}
-      {/* <Route path="/EducationAndWork" element={<EducationAndWorkPage />} /> */}
-      {/* <Route path="/skill" element={<MySkillPage />} /> */}
-      {/* <Route path="/portfolio" element={<PortfolioPage />} /> */}
-      {/* <Route path="/contact" element={<ContactPage />} /> */}
-      {/* </Routes>
-      </Router> */}
+          <Route path="/" element={<IntroducePage />} />
+          <Route
+            path="/page/educationAndWork"
+            element={<EducationAndWorkPage />}
+          />
+          <Route path="/page/skill" element={<MySkillPage />} />
+          <Route path="/page/portfolio" element={<PortfolioPage />} />
+          <Route path="/page/contact" element={<ContactPage />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
