@@ -1,9 +1,13 @@
+import confident from "../src/image/confident.png";
+import working from "../src/image/working.png";
+
 export const educationAndWork = [
   {
     id: 1,
     name: "Coding Skill,",
     year: "2023",
     school: "Techup Thailand",
+    image: confident,
   },
   {
     id: 2,
@@ -11,12 +15,14 @@ export const educationAndWork = [
     year: "2016 - 2020",
     school: "KMITL",
     // school: "King mongkut's institute of technology ladkrabang",
+    image: working,
   },
   {
     id: 3,
     name: "English-Mathematics,",
     year: "2001 - 2016",
     school: "Saint Joseph Thiphawan School ",
+    image: confident,
   },
 ];
 
