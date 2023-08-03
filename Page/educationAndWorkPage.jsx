@@ -9,7 +9,7 @@ function EducationAndWorkPage() {
       {educationAndWork.map((item) => {
         return (
           <div key={item.id} className="educationWork-item">
-            <img src={confident} alt="image" height="380px" />
+            <img src={item.image} alt="image" height="380px" />
             <h2>{item.year}</h2>
             <p>
               {item.name}
