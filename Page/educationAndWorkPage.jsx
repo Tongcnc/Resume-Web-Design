@@ -1,15 +1,14 @@
-import React from "react";
 import "../src/App.css";
 import { educationAndWork } from "../Info/allInfo";
-import confident from "../src/image/confident.png";
 
 function EducationAndWorkPage() {
   return (
-    <div className="educationWork-list">
+    <div className="educationWork-list" id="education">
+      <h2 className="educationWork-title">Educations and Work Experirence</h2>
       {educationAndWork.map((item) => {
         return (
           <div key={item.id} className="educationWork-item">
-            <img src={item.image} alt="image" height="380px" />
+            <img src={item.image} alt="image" height="300px" />
             <h2>{item.year}</h2>
             <p>
               {item.name}

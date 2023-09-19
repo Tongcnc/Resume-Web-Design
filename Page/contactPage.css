@@ -1,0 +1,40 @@
+/* Contact Page */
+section {
+  background-color: rgba(15, 16, 63, 0.5);
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.show-message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-list {
+  display: flex;
+  gap: 80px;
+}
+
+.show-message {
+  width: 500px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: var(--primary-color);
+}
+
+.contact-item {
+  list-style: none;
+}
+
+.contact-item:hover img {
+  transform: scale(1.4);
+  transition: transform 0.5s ease;
+  border: 3px solid var(--highlight-color);
+  border-radius: 50%;
+  cursor: pointer;
+}

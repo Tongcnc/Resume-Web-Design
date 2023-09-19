@@ -1,29 +1,46 @@
-import NavigationBar from "../components/navigationBar";
 import "../src/App.css";
 import { myCV } from "../Info/allInfo";
+import { contactInfo } from "../Info/allInfo";
+import { useState } from "react";
+import Launching from "../src/image/undraw_Launching.svg";
 
 function IntroducePage() {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="intro-page">
-      <NavigationBar />
       <div className="intro-container">
-        <p className="intro-greeting">Hi! I'm</p>
-        <p className="intro-name">Chanokchol Klampoo</p>
-        <h1 className="intro-carreer">Fullstack Developer</h1>
-        <p>
-          Since creative designers often interact with creative teams,
-          <br />
-          managers and clients, they need strong communication skills.
-        </p>
+        <div>
+          <p className="intro-greeting">{"Hi!  I'm"}</p>
+          <p className="intro-name">Chanokchol Klamphu</p>
+          <h1 className="intro-carreer">Fullstack Developer</h1>
+          <p>
+            I am a software developer in the training process of transitioning
+            <br />
+            from a diverse background in architecture to the dynamic world of
+            <br />
+            software development.
+          </p>
+        </div>
         <div className="intro-button">
-          <button>Hire me</button>
-          <a
-            href="https://drive.google.com/file/d/1A6mRnAAOKNRBNzcuT9gEHSXRZ7lQRomG/view?usp=sharing"
-            target="_blank"
-          >
+          <a href={myCV.link} target="_blank" rel="noreferrer">
             <button>Download CV</button>
           </a>
+          <button onClick={() => setIsOpen(!isOpen)}>Hire me</button>
+          {isOpen && (
+            <ul className="intro-contact">
+              {contactInfo.map((item) => (
+                <div key={item.id} className="contact-item">
+                  <a href={item.content} target="_blank" rel="noreferrer">
+                    <img src={item.image} width="32px" alt="icon" />
+                  </a>
+                </div>
+              ))}
+            </ul>
+          )}
         </div>
+      </div>
+      <div>
+        <img src={Launching} alt="" height="350px" />
       </div>
     </div>
   );

@@ -1,10 +1,9 @@
-import React from "react";
 import "../src/App.css";
 import { mySkillInfo } from "../Info/allInfo";
 
 function MySkillPage() {
   return (
-    <div className="skill-container">
+    <div className="skill-container" id="skill">
       <h2>Additional passions</h2>
       <div className="skill-list">
         {mySkillInfo.map((item) => {
