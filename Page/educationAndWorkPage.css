@@ -8,6 +8,7 @@
 
 .educationWork-title {
   z-index: 80;
+  margin-bottom: 100px;
 }
 
 .educationWork-item {
@@ -20,13 +21,13 @@
   );
   animation: float 5s ease-out infinite;
   border-radius: 50%;
-  /* overflow: hidden; */
   position: relative;
   /* ring */
   margin: 40px;
-  box-shadow: 0 0 0 30px rgba(15, 16, 63, 1), 0 0 0 32px rgb(153, 153, 153),
-    0 0 0 80px rgba(15, 16, 63, 1), 0 0 0 82px rgb(204, 204, 204),
-    0 0 0 130px rgba(15, 16, 63, 1), 0 0 0 132px rgb(204, 204, 204);
+  box-shadow: 0 0 0 30px rgb(23, 25, 103), 0 0 0 32px rgb(153, 153, 153),
+    0 0 0 80px rgb(23, 25, 103), 0 0 0 82px rgb(204, 204, 204),
+    0 0 0 130px rgb(23, 25, 103), 0 0 0 132px rgb(204, 204, 204);
+  position: relative;
 }
 
 .educationWork-item h2 {
@@ -73,4 +74,25 @@
   100% {
     transform: translateY(0px);
   }
+}
+
+.line {
+  position: absolute;
+  width: 800px;
+  height: 1px;
+  background-color: white;
+  bottom: 0px;
+  bottom: 50%;
+  left: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.detail-container {
+  background-color: white;
+}
+
+.detail-container p,
+h3 {
+  color: slateblue;
 }

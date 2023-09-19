@@ -10,11 +10,24 @@ function EducationAndWorkPage() {
           <div key={item.id} className="educationWork-item">
             <img src={item.image} alt="image" height="300px" />
             <h2>{item.year}</h2>
-            <p>
-              {item.name}
-              <br />
-              {item.school}
-            </p>
+            <p>{item.name}</p>
+            <div className="line"></div>
+            <div>
+              {item.details.map((detail) => {
+                return (
+                  <div
+                    key={detail.id}
+                    className="detail-container"
+                    data-aos="fade-right"
+                    data-aos-duration="1200"
+                  >
+                    <h3>{detail.name}</h3>
+                    <p>{detail.year}</p>
+                    <p>{detail.school}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         );
       })}

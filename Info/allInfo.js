@@ -8,26 +8,45 @@ import article from "../src/image/undraw_articles.svg";
 export const educationAndWork = [
   {
     id: 1,
-    name: "Coding Skill,",
-    year: "2023",
-    school: "Techup Thailand",
+    name: "Educations,",
+    year: "2013-2023",
     image: Convert,
+    details: [
+      {
+        id: 1,
+        name: "Coding Bootcamp,",
+        year: "Jun-Oct 2023",
+        school: "Full-Stack Software Development",
+      },
+      {
+        id: 2,
+        name: "Faculty of Industail Education and Technology Field of study Architecture",
+        year: "2016 - 2020",
+        school: "KMITL",
+        // school: "King mongkut's institute of technology ladkrabang",
+      },
+      {
+        id: 3,
+        name: "English-Mathematics,",
+        year: "2013-2016",
+        school: "Saint Joseph Thiphawan School ",
+      },
+    ],
   },
   {
     id: 2,
-    name: "Faculty of Industail Education and Technology,",
-    year: "2016 - 2020",
-    school: "KMITL",
-    // school: "King mongkut's institute of technology ladkrabang",
+    name: "Work Experience,",
+    year: "Jun 2021 - Jan 2023",
     image: article,
+    details: [
+      {
+        id: 1,
+        name: "Junior Architecture/Interior Designer,",
+        year: "Jun 2021- Jan 2023",
+        school: "Techup Thailand",
+      },
+    ],
   },
-  // {
-  //   id: 3,
-  //   name: "English-Mathematics,",
-  //   year: "2001 - 2016",
-  //   school: "Saint Joseph Thiphawan School ",
-  //   image: confident,
-  // },
 ];
 
 export const mySkillInfo = [
@@ -64,13 +83,19 @@ export const portfolioInfo = [
     title: "Find a Book",
     image: FindaBook,
     link: "https://github.com/Tongcnc/Findbook-on-Google.git",
+    description:
+      "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
+    tech: ["CSS", "JavaScript", "HTML", "React"],
   },
   {
     id: 2,
-    title: "BestLearning",
+    title: "Neatly Hotel",
     image:
       "https://i.pinimg.com/564x/42/21/3d/42213d51abddd912dc0ee5d4bfc6fb4f.jpg",
-    link: "",
+    link: "https://github.com/PasinPeat/neatly-website-client.git",
+    description:
+      "Hotel booking Website | Team Project Final (6 members) A hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
+    tech: ["Typescript", "React", "Tailwind", "DaisyUI", "MUI", "Swiperjs"],
   },
   {
     id: 3,
@@ -78,6 +103,9 @@ export const portfolioInfo = [
     image:
       "https://i.pinimg.com/564x/84/72/35/847235f8bbfbcd2175e0984c4ab9f3d4.jpg",
     link: "",
+    description:
+      "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
+    tech: ["CSS", "JavaScript", "HTML", "React"],
   },
   {
     id: 4,
@@ -85,6 +113,9 @@ export const portfolioInfo = [
     image:
       "https://i.pinimg.com/564x/88/b1/24/88b124b7547e2a3abbbe3feef015ba40.jpg",
     link: "",
+    description:
+      "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
+    tech: ["CSS", "JavaScript", "HTML", "React"],
   },
 ];
 

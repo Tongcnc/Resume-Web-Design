@@ -5,6 +5,7 @@ import "../Page/educationAndWorkPage.css";
 import "../Page/mySkillPage.css";
 import "../Page/portfolioPage.css";
 import "../Page/contactPage.css";
+import "../components/PopUp.css";
 import NavigationBar from "../components/navigationBar";
 import IntroducePage from "../Page/introducePage";
 import EducationAndWorkPage from "../Page/educationAndWorkPage";
