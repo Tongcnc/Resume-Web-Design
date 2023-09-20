@@ -23,8 +23,9 @@
   height: 100px;
   padding: 15px;
   border-radius: 20px;
-  margin-bottom: 10px;
   margin-bottom: 20px;
+  padding-top: 30px;
+  text-align: center;
 }
 
 .skill li {
@@ -38,11 +39,11 @@
 
 .skill img {
   position: absolute;
-  bottom: 360px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 370px;
+  left: 45%;
+  transform: translate(-50%, -50%);
   z-index: 80;
-  /* animation: spin 3s infinite; */
+  animation: spin 3s infinite;
 }
 
 .skill:hover h2 {
@@ -51,10 +52,6 @@
   transition: 0.6s;
   cursor: pointer;
 }
-
-/* .skill:hover img {
-  animation: spin 3s infinite;
-} */
 
 @keyframes spin {
   from {

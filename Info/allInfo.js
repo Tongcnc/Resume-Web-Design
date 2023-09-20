@@ -4,6 +4,9 @@ import Convert from "../src/image/undraw_convert.svg";
 import learning from "../src/image/undraw_learning.svg";
 import upgrade from "../src/image/undraw_upgrade.svg";
 import article from "../src/image/undraw_articles.svg";
+import crudProject1 from "../src/image/crud-project-1.png";
+import staticWeb from "../src/image/static-website.mp4";
+import neatlyVDO from "../src/image/neatly.mp4";
 
 export const educationAndWork = [
   {
@@ -68,12 +71,8 @@ export const mySkillInfo = [
   },
   {
     id: 3,
-    title: "Others,UX/UI",
-    program: [
-      "Figma",
-      "Software Testing",
-      "Version Control with Git and Github",
-    ],
+    title: "Others",
+    program: ["Software Testing", "Version Control with Git and Github"],
   },
 ];
 
@@ -85,13 +84,12 @@ export const portfolioInfo = [
     link: "https://github.com/Tongcnc/Findbook-on-Google.git",
     description:
       "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
-    tech: ["CSS", "JavaScript", "HTML", "React"],
+    tech: ["CSS", "JavaScript", "React"],
   },
   {
     id: 2,
     title: "Neatly Hotel",
-    image:
-      "https://i.pinimg.com/564x/42/21/3d/42213d51abddd912dc0ee5d4bfc6fb4f.jpg",
+    image: neatlyVDO,
     link: "https://github.com/PasinPeat/neatly-website-client.git",
     description:
       "Hotel booking Website | Team Project Final (6 members) A hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
@@ -99,23 +97,21 @@ export const portfolioInfo = [
   },
   {
     id: 3,
-    title: "Sendpay",
-    image:
-      "https://i.pinimg.com/564x/84/72/35/847235f8bbfbcd2175e0984c4ab9f3d4.jpg",
-    link: "",
+    title: "CRUD Users",
+    image: crudProject1,
+    link: "https://github.com/Tongcnc/crud-users-project.git",
     description:
       "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
-    tech: ["CSS", "JavaScript", "HTML", "React"],
+    tech: ["TailwindCSS", "JavaScript", "React"],
   },
   {
     id: 4,
-    title: "Mobile App",
-    image:
-      "https://i.pinimg.com/564x/88/b1/24/88b124b7547e2a3abbbe3feef015ba40.jpg",
-    link: "",
+    title: "Static Website",
+    image: staticWeb,
+    link: "https://github.com/techupth/html-css-git-mini-project-html-project-sliver-group2.git",
     description:
       "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
-    tech: ["CSS", "JavaScript", "HTML", "React"],
+    tech: ["TailwindCSS", "HTML"],
   },
 ];
 

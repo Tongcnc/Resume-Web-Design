@@ -18,19 +18,14 @@ function PortfolioPage() {
         {portfolioInfo.map((item) => {
           return (
             <div key={item.id} className="port">
-              <p>{item.title}</p>
-              {/* <a href={item.link} target="_blank" rel="noreferrer"> */}
-              {/* <img src={item.image} alt="portfolio" /> */}
-              <iframe
-                src={item.image}
-                // width="750" height="400"
-              ></iframe>
-              {/* </a> */}
-              <div>
-                <button onClick={() => showPopupHandler(item.id)}>
-                  more details
-                </button>
-              </div>
+              {/* <p>{item.title}</p> */}
+              <iframe src={item.image}></iframe>
+              <button
+                onClick={() => showPopupHandler(item.id)}
+                className="moreDetail"
+              >
+                more details
+              </button>
             </div>
           );
         })}

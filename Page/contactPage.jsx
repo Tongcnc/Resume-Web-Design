@@ -3,7 +3,7 @@ import { contactInfo } from "../Info/allInfo";
 import { useState } from "react";
 
 function ContactPage() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState("contact me");
 
   function addMsg(item) {
     setText(item.content);
