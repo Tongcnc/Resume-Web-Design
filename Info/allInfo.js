@@ -101,7 +101,7 @@ export const portfolioInfo = [
     image: crudProject1,
     link: "https://github.com/Tongcnc/crud-users-project.git",
     description:
-      "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
+      "A website with CRUD features enables users to create,edit and deletate their account",
     tech: ["TailwindCSS", "JavaScript", "React"],
   },
   {
@@ -109,8 +109,7 @@ export const portfolioInfo = [
     title: "Static Website",
     image: staticWeb,
     link: "https://github.com/techupth/html-css-git-mini-project-html-project-sliver-group2.git",
-    description:
-      "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
+    description: "Static Website | Team mini Project (5 members)",
     tech: ["TailwindCSS", "HTML"],
   },
 ];

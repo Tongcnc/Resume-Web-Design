@@ -13,8 +13,14 @@ import MySkillPage from "../Page/mySkillPage";
 import PortfolioPage from "../Page/portfolioPage";
 import ContactPage from "../Page/contactPage";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div className="App">
       <Router>

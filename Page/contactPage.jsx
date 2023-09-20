@@ -16,7 +16,12 @@ function ContactPage() {
         {contactInfo.map((item) => {
           if (item.id === 1 || item.id === 2 || item.id === 3) {
             return (
-              <div key={item.id} className="contact-item">
+              <div
+                key={item.id}
+                className="contact-item"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <a href={item.content} target="_blank" rel="noreferrer">
                   <img src={item.image} width="40px" alt="icon" />
                 </a>
@@ -24,7 +29,12 @@ function ContactPage() {
             );
           } else {
             return (
-              <div key={item.id} className="contact-item">
+              <div
+                key={item.id}
+                className="contact-item"
+                data-aos="fade-up"
+                data-aos-duration="1500"
+              >
                 <a onClick={() => addMsg(item)}>
                   <img src={item.image} width="40px" alt="icon" />
                 </a>

@@ -17,7 +17,9 @@ function MySkillPage() {
               <h2>{item.title}</h2>
               <ul>
                 {item.program.map((skill, index) => (
-                  <li key={index}>{skill}</li>
+                  <li key={index} data-aos="fade-up" data-aos-duration="1500">
+                    {skill}
+                  </li>
                 ))}
               </ul>
             </div>
