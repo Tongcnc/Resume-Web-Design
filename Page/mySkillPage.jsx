@@ -1,11 +1,10 @@
-import React from "react";
 import "../src/App.css";
 import { mySkillInfo } from "../Info/allInfo";
 
 function MySkillPage() {
   return (
-    <div className="skill-container">
-      <h2>Additional passions</h2>
+    <div className="skill-container" id="skill">
+      <h2 className="skill-title">Additional passions</h2>
       <div className="skill-list">
         {mySkillInfo.map((item) => {
           return (
@@ -18,7 +17,9 @@ function MySkillPage() {
               <h2>{item.title}</h2>
               <ul>
                 {item.program.map((skill, index) => (
-                  <li key={index}>{skill}</li>
+                  <li key={index} data-aos="fade-up" data-aos-duration="1500">
+                    {skill}
+                  </li>
                 ))}
               </ul>
             </div>

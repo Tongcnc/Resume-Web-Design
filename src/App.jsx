@@ -1,33 +1,36 @@
-import { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import "../components/navigationBar.css";
+import "../Page/introducePage.css";
+import "../Page/educationAndWorkPage.css";
+import "../Page/mySkillPage.css";
+import "../Page/portfolioPage.css";
+import "../Page/contactPage.css";
+import "../components/PopUp.css";
+import NavigationBar from "../components/navigationBar";
 import IntroducePage from "../Page/introducePage";
 import EducationAndWorkPage from "../Page/educationAndWorkPage";
 import MySkillPage from "../Page/mySkillPage";
 import PortfolioPage from "../Page/portfolioPage";
 import ContactPage from "../Page/contactPage";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+    // AOS.refresh();
+  }, []);
   return (
     <div className="App">
-      {/* <IntroducePage />
-      <EducationAndWorkPage />
-      <MySkillPage />
-      <PortfolioPage />
-      <ContactPage /> */}
-
       <Router>
-        <Routes>
-          <Route path="/" element={<IntroducePage />} />
-          <Route
-            path="/page/educationAndWork"
-            element={<EducationAndWorkPage />}
-          />
-          <Route path="/page/skill" element={<MySkillPage />} />
-          <Route path="/page/portfolio" element={<PortfolioPage />} />
-          <Route path="/page/contact" element={<ContactPage />} />
-        </Routes>
+        <NavigationBar />
+        <IntroducePage />
+        <EducationAndWorkPage />
+        <MySkillPage />
+        <PortfolioPage />
+        <ContactPage />
       </Router>
     </div>
   );

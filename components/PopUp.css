@@ -1,0 +1,77 @@
+.popup-main {
+  width: screen;
+  height: screen;
+  position: fixed;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  margin-top: 150px;
+}
+
+.popup-container {
+  backdrop-filter: blur(60px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  position: relative;
+  width: 550px;
+}
+
+.popup-content {
+  text-align: start;
+  padding: 50px 30px 50px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.popup-content iframe {
+  width: 400px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+.popup-link {
+  width: 150px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 5px 8px 5px 8px;
+  border: 2px solid var(--highlight-color);
+}
+.popup-link:hover {
+  background-color: var(--highlight-color);
+  transition: 0.8s;
+  transform: scale(1.1);
+}
+
+.popup-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tech-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tech-item {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 5px 20px 5px 20px;
+  border-radius: 10px;
+}
+
+.buttonX {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
