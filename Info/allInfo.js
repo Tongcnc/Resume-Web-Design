@@ -1,58 +1,22 @@
-import FindaBook from "../src/image/FindaBook.mp4";
-import learning1 from "../src/image/undraw_learning_1.svg";
-import article from "../src/image/undraw_articles.svg";
-import staticWeb from "../src/image/static-website.mp4";
-import neatlyVDO from "../src/image/neatly.mp4";
-import crudVDO from "../src/image/crud-project-video.mp4";
-
 export const educationAndWork = [
   {
     id: 1,
-    name: "Educations",
-    year: "2013-2023",
-    image: learning1,
-    details: [
-      {
-        id: 1,
-        name: "Coding Bootcamp,",
-        year: "Jun-Oct 2023",
-        school: "Full-Stack Software Development",
-        description: null,
-      },
-      {
-        id: 2,
-        name: "Faculty of Industail Education and Technology Field of study Architecture",
-        year: "2016-2020",
-        school: "King mongkut's institute of technology ladkrabang, KMITL",
-        description: null,
-      },
-      {
-        id: 3,
-        name: "English-Mathematics,",
-        year: "2013-2016",
-        school: "Saint Joseph Thiphawan School ",
-        description: null,
-      },
-    ],
+    name: "Coding Skill,",
+    year: "2023",
+    school: "Techup Thailand",
   },
   {
     id: 2,
-    name: "Work Experience",
-    year: "Jun 2021 - Jan 2023",
-    image: article,
-    details: [
-      {
-        id: 1,
-        name: "Junior Architecture / Interior Designer,",
-        year: "Jun 2021 - Jan 2023",
-        school: "PRIMARY WORKSHOP AND DESIGN COMPANY LIMITED",
-        description: [
-          "Design and present data analysis results, sources, case studies, concepts, master plans, and customize the solutions that fit the customers’ needs",
-          "Collaborate with specialists, constructors, engineers, and suppliers in the global supply chain.",
-          "Surveying the area, attending meetings, collecting, analyzing data, following up, coordinating, and summarizing results.",
-        ],
-      },
-    ],
+    name: "Faculty of Industail Education and Technology,",
+    year: "2016 - 2020",
+    school: "KMITL",
+    // school: "King mongkut's institute of technology ladkrabang",
+  },
+  {
+    id: 3,
+    name: "English-Mathematics,",
+    year: "2001 - 2016",
+    school: "Saint Joseph Thiphawan School ",
   },
 ];
 
@@ -60,72 +24,48 @@ export const mySkillInfo = [
   {
     id: 1,
     title: "Front-End Developer",
-    program: [
-      "HTML",
-      "Cascading Style Sheets(CSS)",
-      "Tailwind CSS",
-      "React",
-      "JavaScript",
-    ],
+    program: ["Tailwind", "React", "Bootstrap"],
   },
   {
     id: 2,
     title: "Back-End Developer",
-    program: ["MongoDB", "Node.js", "Express.js", "PostgreSQL"],
+    program: ["MongoDB", "NodeJS", "Java"],
   },
   {
     id: 3,
-    title: "Others",
-    program: ["Software Testing", "Version Control with Git and Github"],
+    title: "UX/UI Designer",
+    program: ["Figma", "AdobeXD", "Zeplin"],
   },
 ];
 
 export const portfolioInfo = [
   {
     id: 1,
-    title: "Find a Book",
-    image: FindaBook,
-    link: "https://github.com/Tongcnc/Findbook-on-Google.git",
-    description:
-      "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
-    tech: ["CSS", "JavaScript", "React"],
+    title: "E-Commerce",
+    image:
+      "https://i.pinimg.com/564x/6a/34/67/6a34678e5c8b38c2d1644476f3816dcf.jpg",
+    color: "",
   },
   {
     id: 2,
-    title: "Neatly Hotel",
-    image: neatlyVDO,
-    link: "https://github.com/PasinPeat/neatly-website-client.git",
-    description:
-      "Hotel booking Website | Team Project Final (6 members) | A hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
-    tech: [
-      "Typescript",
-      "React",
-      "Tailwind",
-      "DaisyUI",
-      "MUI",
-      "Swiperjs",
-      "Node.js",
-      "Express.js",
-      "Supabase",
-    ],
+    title: "BestLearning",
+    image:
+      "https://i.pinimg.com/564x/42/21/3d/42213d51abddd912dc0ee5d4bfc6fb4f.jpg",
+    color: "",
   },
   {
     id: 3,
-    title: "CRUD Users",
-    image: crudVDO,
-    link: "https://github.com/Tongcnc/crud-users-project.git",
-    description:
-      "A website with CRUD features enables users to create,edit and deletate their account",
-    tech: ["TailwindCSS", "JavaScript", "React", "Node.js", "Express.js"],
+    title: "Sendpay",
+    image:
+      "https://i.pinimg.com/564x/84/72/35/847235f8bbfbcd2175e0984c4ab9f3d4.jpg",
+    color: "",
   },
   {
     id: 4,
-    title: "Static Education Website",
-    image: staticWeb,
-    link: "https://github.com/techupth/html-css-git-mini-project-html-project-sliver-group2.git",
-    description:
-      "Static Education Website | Team mini Project (5 members) | A static education website that provides educational content, resources, and information without dynamic or interactive features.It typically consists of fixed web pages with text, images, and elements, offering information on various educational programs. ",
-    tech: ["TailwindCSS", "HTML"],
+    title: "Mobile App",
+    image:
+      "https://i.pinimg.com/564x/88/b1/24/88b124b7547e2a3abbbe3feef015ba40.jpg",
+    color: "",
   },
 ];
 
@@ -146,20 +86,13 @@ export const contactInfo = [
   },
   {
     id: 3,
-    title: "Linkedin",
-    image:
-      "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-4.png&r=255&g=255&b=255",
-    content: "https://www.linkedin.com/in/chanokchol-klamphu/",
-  },
-  {
-    id: 4,
     title: "Email",
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-email-10.png&r=255&g=255&b=255",
     content: "tongcnc3@gmail.com",
   },
   {
-    id: 5,
+    id: 4,
     title: "Telphone",
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-phone-8.png&r=255&g=255&b=255",
@@ -168,5 +101,5 @@ export const contactInfo = [
 ];
 
 export const myCV = {
-  link: "https://drive.google.com/file/d/1qNASBxZ7yyG2z-8ayoTm0nPX6ld5wraS/view?usp=sharing",
+  link: "https://drive.google.com/file/d/1A6mRnAAOKNRBNzcuT9gEHSXRZ7lQRomG/view?usp=sharing",
 };
