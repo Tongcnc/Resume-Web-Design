@@ -1,52 +1,56 @@
 import FindaBook from "../src/image/FindaBook.mp4";
-import Launching from "../src/image/undraw_Launching.svg";
-import Convert from "../src/image/undraw_convert.svg";
-import learning from "../src/image/undraw_learning.svg";
-import upgrade from "../src/image/undraw_upgrade.svg";
+import learning1 from "../src/image/undraw_learning_1.svg";
 import article from "../src/image/undraw_articles.svg";
-import crudProject1 from "../src/image/crud-project-1.png";
 import staticWeb from "../src/image/static-website.mp4";
 import neatlyVDO from "../src/image/neatly.mp4";
+import crudVDO from "../src/image/crud-project-video.mp4";
 
 export const educationAndWork = [
   {
     id: 1,
-    name: "Educations,",
+    name: "Educations",
     year: "2013-2023",
-    image: Convert,
+    image: learning1,
     details: [
       {
         id: 1,
         name: "Coding Bootcamp,",
         year: "Jun-Oct 2023",
         school: "Full-Stack Software Development",
+        description: null,
       },
       {
         id: 2,
         name: "Faculty of Industail Education and Technology Field of study Architecture",
-        year: "2016 - 2020",
-        school: "KMITL",
-        // school: "King mongkut's institute of technology ladkrabang",
+        year: "2016-2020",
+        school: "King mongkut's institute of technology ladkrabang, KMITL",
+        description: null,
       },
       {
         id: 3,
         name: "English-Mathematics,",
         year: "2013-2016",
         school: "Saint Joseph Thiphawan School ",
+        description: null,
       },
     ],
   },
   {
     id: 2,
-    name: "Work Experience,",
+    name: "Work Experience",
     year: "Jun 2021 - Jan 2023",
     image: article,
     details: [
       {
         id: 1,
-        name: "Junior Architecture/Interior Designer,",
-        year: "Jun 2021- Jan 2023",
-        school: "Techup Thailand",
+        name: "Junior Architecture / Interior Designer,",
+        year: "Jun 2021 - Jan 2023",
+        school: "PRIMARY WORKSHOP AND DESIGN COMPANY LIMITED",
+        description: [
+          "Design and present data analysis results, sources, case studies, concepts, master plans, and customize the solutions that fit the customers’ needs",
+          "Collaborate with specialists, constructors, engineers, and suppliers in the global supply chain.",
+          "Surveying the area, attending meetings, collecting, analyzing data, following up, coordinating, and summarizing results.",
+        ],
       },
     ],
   },
@@ -92,24 +96,35 @@ export const portfolioInfo = [
     image: neatlyVDO,
     link: "https://github.com/PasinPeat/neatly-website-client.git",
     description:
-      "Hotel booking Website | Team Project Final (6 members) A hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
-    tech: ["Typescript", "React", "Tailwind", "DaisyUI", "MUI", "Swiperjs"],
+      "Hotel booking Website | Team Project Final (6 members) | A hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
+    tech: [
+      "Typescript",
+      "React",
+      "Tailwind",
+      "DaisyUI",
+      "MUI",
+      "Swiperjs",
+      "Node.js",
+      "Express.js",
+      "Supabase",
+    ],
   },
   {
     id: 3,
     title: "CRUD Users",
-    image: crudProject1,
+    image: crudVDO,
     link: "https://github.com/Tongcnc/crud-users-project.git",
     description:
       "A website with CRUD features enables users to create,edit and deletate their account",
-    tech: ["TailwindCSS", "JavaScript", "React"],
+    tech: ["TailwindCSS", "JavaScript", "React", "Node.js", "Express.js"],
   },
   {
     id: 4,
-    title: "Static Website",
+    title: "Static Education Website",
     image: staticWeb,
     link: "https://github.com/techupth/html-css-git-mini-project-html-project-sliver-group2.git",
-    description: "Static Website | Team mini Project (5 members)",
+    description:
+      "Static Education Website | Team mini Project (5 members) | A static education website that provides educational content, resources, and information without dynamic or interactive features.It typically consists of fixed web pages with text, images, and elements, offering information on various educational programs. ",
     tech: ["TailwindCSS", "HTML"],
   },
 ];

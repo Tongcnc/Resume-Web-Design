@@ -27,7 +27,11 @@ function IntroducePage() {
             software development.
           </p>
         </div>
-        <div className="intro-button">
+        <div
+          className="intro-button"
+          data-aos="fade-up"
+          data-aos-duration="1500"
+        >
           <a href={myCV.link} target="_blank" rel="noreferrer">
             <button>Download CV</button>
           </a>

@@ -4,7 +4,7 @@ import { mySkillInfo } from "../Info/allInfo";
 function MySkillPage() {
   return (
     <div className="skill-container" id="skill">
-      <h2>Additional passions</h2>
+      <h2 className="skill-title">Additional passions</h2>
       <div className="skill-list">
         {mySkillInfo.map((item) => {
           return (
