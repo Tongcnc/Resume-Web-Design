@@ -22,13 +22,14 @@ body {
 }
 
 .App {
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 120px;
   /* background: linear-gradient(
     180deg,
-    rgb(19, 21, 94) 0%,
-    rgb(25, 52, 103) 100%
+    rgba(15, 16, 63, 1) 0%,
+    rgba(41, 84, 163, 1) 100%
   ); */
   background: rgb(23, 25, 103);
 }

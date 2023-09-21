@@ -21,8 +21,6 @@ function NavigationBar() {
             alt="profile-icon"
             width="45px"
             id="profile-icon"
-            data-aos="zoom-out"
-            data-aos-duration="1500"
           />
         </Link>
       </li>

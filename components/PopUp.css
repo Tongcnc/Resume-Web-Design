@@ -1,6 +1,7 @@
-.popup-main {
+.popup {
   width: screen;
   height: screen;
+  /* background-color: rgba(255, 255, 255, 0.1); */
   position: fixed;
   top: 0px;
   left: 50%;
@@ -10,49 +11,35 @@
 }
 
 .popup-container {
-  backdrop-filter: blur(60px);
+  /* background-color: white; */
+  backdrop-filter: blur(50px);
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   position: relative;
-  width: 550px;
+  width: 650px;
 }
 
 .popup-content {
   text-align: start;
-  padding: 50px 30px 50px 30px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
+/* w-full h-full fixed top-0 left-0 z-10 bg-headingColor bg-opacity-40 */
 
 .popup-content iframe {
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 250px;
   border-radius: 10px;
   object-fit: cover;
   overflow: hidden;
-}
-
-.popup-link {
-  width: 150px;
-  text-align: center;
-  text-decoration: none;
-  border-radius: 20px;
-  font-size: 12px;
-  padding: 5px 8px 5px 8px;
-  border: 2px solid var(--highlight-color);
-}
-.popup-link:hover {
-  background-color: var(--highlight-color);
-  transition: 0.8s;
-  transform: scale(1.1);
+  /* padding-bottom: 56.25%; */
 }
 
 .popup-box {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  text-align: start;
 }
 
 .tech-box {
@@ -68,10 +55,13 @@
 }
 
 .buttonX {
-  border: none;
-  background: none;
   position: absolute;
   top: 15px;
   right: 15px;
+  color: blueviolet;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 20px;
   cursor: pointer;
 }

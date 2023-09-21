@@ -13,8 +13,8 @@ function PortfolioPage() {
   };
   return (
     <div className="port-container" id="projects">
-      <h2 className="port-title">My recent work</h2>
-      <div className="port-list" data-aos="zoom-in-up" data-aos-duration="1500">
+      <h2>My recent work</h2>
+      <div className="port-list">
         {portfolioInfo.map((item) => {
           return (
             <div key={item.id} className="port">
