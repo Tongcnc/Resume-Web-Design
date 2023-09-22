@@ -32,3 +32,7 @@ body {
   ); */
   background: rgb(23, 25, 103);
 }
+
+#shadow-host-companion {
+  display: none;
+}

@@ -23,7 +23,7 @@ function EducationAndWorkPage() {
                             key={detail.id}
                             className="detail-container"
                             data-aos="fade-up"
-                            data-aos-duration="1200"
+                            data-aos-duration="1500"
                           >
                             <div className="detail-boxL">
                               <h2>{detail.year}</h2>
@@ -39,7 +39,7 @@ function EducationAndWorkPage() {
                               <ul>
                                 <li
                                   data-aos="fade-right"
-                                  data-aos-duration="1200"
+                                  data-aos-duration="1500"
                                 >
                                   {detail.description[0]}
                                 </li>

@@ -16,14 +16,26 @@ function PopUp({ setShowPopup, activeID, portfolioInfo }) {
           <iframe src={project.image}></iframe>
           <div className="popup-box">
             <h2 className="popup-title">{project.title}</h2>
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="popup-link"
-            >
-              my github repo
-            </a>
+            <div className="link-container">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="popup-link"
+              >
+                my github repo
+              </a>
+              {project.linkdemo !== null ? (
+                <a
+                  href={project.linkdemo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="popup-link"
+                >
+                  my demo website
+                </a>
+              ) : null}
+            </div>
             <p>{project.description}</p>
             <div className="tech-box">
               <p>Technologies:</p>

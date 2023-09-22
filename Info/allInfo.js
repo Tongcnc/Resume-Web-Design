@@ -4,6 +4,7 @@ import article from "../src/image/undraw_articles.svg";
 import staticWeb from "../src/image/static-website.mp4";
 import neatlyVDO from "../src/image/neatly.mp4";
 import crudVDO from "../src/image/crud-project-video.mp4";
+import resumeWebsite from "../src/image/resume-website.mp4";
 
 export const educationAndWork = [
   {
@@ -86,6 +87,7 @@ export const portfolioInfo = [
     title: "Find a Book",
     image: FindaBook,
     link: "https://github.com/Tongcnc/Findbook-on-Google.git",
+    linkdemo: "https://find-a-book-gg.netlify.app",
     description:
       "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
     tech: ["CSS", "JavaScript", "React"],
@@ -95,6 +97,7 @@ export const portfolioInfo = [
     title: "Neatly Hotel",
     image: neatlyVDO,
     link: "https://github.com/PasinPeat/neatly-website-client.git",
+    linkdemo: null,
     description:
       "Hotel booking Website | Team Project Final (6 members) | A hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
     tech: [
@@ -111,18 +114,30 @@ export const portfolioInfo = [
   },
   {
     id: 3,
+    title: "Resume-Website",
+    image: resumeWebsite,
+    link: "https://github.com/Tongcnc/Resume-Web-Design",
+    linkdemo: "https://tongcnc-resume-dev.netlify.app",
+    description:
+      "Explore my journey through my resume website. Showcase of my technical prowess and coding skills.",
+    tech: ["Javascript", "React", "CSS", "AOS"],
+  },
+  {
+    id: 4,
     title: "CRUD Users",
     image: crudVDO,
     link: "https://github.com/Tongcnc/crud-users-project.git",
+    linkdemo: null,
     description:
       "A website with CRUD features enables users to create,edit and deletate their account",
     tech: ["TailwindCSS", "JavaScript", "React", "Node.js", "Express.js"],
   },
   {
-    id: 4,
+    id: 5,
     title: "Static Education Website",
     image: staticWeb,
     link: "https://github.com/techupth/html-css-git-mini-project-html-project-sliver-group2.git",
+    linkdemo: "https://future-education-project.netlify.app/",
     description:
       "Static Education Website | Team mini Project (5 members) | A static education website that provides educational content, resources, and information without dynamic or interactive features.It typically consists of fixed web pages with text, images, and elements, offering information on various educational programs. ",
     tech: ["TailwindCSS", "HTML"],
@@ -168,5 +183,5 @@ export const contactInfo = [
 ];
 
 export const myCV = {
-  link: "https://drive.google.com/file/d/1qNASBxZ7yyG2z-8ayoTm0nPX6ld5wraS/view?usp=sharing",
+  link: "https://drive.google.com/file/d/10suUs-gmVlIizArwD7pqwwIEC1-hB8Kr/view?usp=sharing",
 };
