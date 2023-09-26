@@ -1,6 +1,5 @@
 /*Skill Page */
 .skill-container {
-  /* width: 100%; */
   margin-top: 500px;
   display: flex;
   flex-direction: column;
@@ -20,8 +19,11 @@
 }
 
 .skill {
-  position: relative;
   flex: 1;
+}
+
+.skill-title-box {
+  position: relative;
 }
 
 .skill h2 {
@@ -45,7 +47,7 @@
 
 .skill img {
   position: absolute;
-  bottom: 370px;
+  top: -20px;
   left: 45%;
   transform: translate(-50%, -50%);
   z-index: 80;
@@ -65,5 +67,41 @@
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+
+/* media query */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* media query */
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .skill-container {
+    margin-top: 300px;
+    gap: 0px;
+  }
+
+  .skill-title-box {
+    scale: 0.85;
+  }
+
+  .skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    scale: 0.8;
+  }
+
+  .skill-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .skill img {
+    top: -30px;
   }
 }

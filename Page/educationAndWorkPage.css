@@ -11,6 +11,20 @@
   }
 }
 
+.educationWork-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 400px;
+}
+
+.educationWork-title {
+  margin-bottom: 20px;
+  color: var(--highlight-color);
+  font-size: 2rem;
+  text-shadow: 2px 2px 20px rgba(248, 249, 250, 0.4);
+}
+
 .educationWork-list {
   display: flex;
   flex-direction: column;
@@ -21,7 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 150px;
+  margin-top: 180px;
 }
 
 .detail-container {
@@ -45,38 +59,31 @@
   margin-bottom: 5px;
 }
 
+.detail-desc {
+  margin-top: 50px;
+}
+
 .detail-desc li {
   list-style: none;
   padding: 20px;
   border: 2px solid var(--highlight-color);
   border-radius: 15px;
-  margin: 15px 10px 15px 10px;
+  margin: 15px 10px;
 }
 
 .contain img {
   animation: float 5s ease-out infinite;
 }
 
-.educationWork-title {
-  margin-bottom: 20px;
-  color: var(--highlight-color);
-  font-size: 2rem;
-  text-shadow: 2px 2px 20px rgba(248, 249, 250, 0.4);
-}
-
 /* -------------------- */
-.educationWork-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 300px;
-}
 
 .contain {
   width: 50em;
   height: 50em;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sun {
@@ -141,5 +148,50 @@ moon::before {
 @keyframes orbit {
   to {
     transform: rotate(360deg);
+  }
+}
+
+/* media query :phone*/
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .contain {
+    scale: 0.6;
+  }
+
+  .educationWork-title {
+    margin-bottom: 0px;
+    max-width: 390px;
+  }
+
+  .educationWork-container {
+    gap: 0px;
+  }
+
+  .detail-main-container {
+    gap: 30px;
+  }
+
+  .detail-main-container p,
+  h3 {
+    scale: 1.2;
+    line-height: 1.6;
+  }
+
+  .sun p,
+  h2 {
+    scale: 1.2;
+  }
+
+  .educationWork-title {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .detail-desc {
+    margin-top: 100px;
+    scale: 1.25;
+  }
+
+  .detail-desc h3 {
+    font-size: 0.9rem;
   }
 }

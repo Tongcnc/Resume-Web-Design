@@ -36,3 +36,10 @@ body {
 #shadow-host-companion {
   display: none;
 }
+
+/* media query :phone*/
+@media screen and (min-width: 390px) and (max-width: 767px) {
+  .App {
+    gap: 150px;
+  }
+}

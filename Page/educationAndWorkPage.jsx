@@ -35,7 +35,7 @@ function EducationAndWorkPage() {
                           </div>
                           {detail.description !== null ? (
                             <div className="detail-desc">
-                              <p>Key responsibilities:</p>
+                              <h3>Key responsibilities:</h3>
                               <ul>
                                 <li
                                   data-aos="fade-right"

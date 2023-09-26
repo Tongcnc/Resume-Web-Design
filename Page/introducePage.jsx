@@ -1,11 +1,9 @@
 import "../src/App.css";
 import { myCV } from "../Info/allInfo";
-import { contactInfo } from "../Info/allInfo";
-import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 import Launching from "../src/image/undraw_Launching.svg";
 
 function IntroducePage() {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="intro-page">
       <div className="intro-container">
@@ -19,7 +17,7 @@ function IntroducePage() {
           >
             Fullstack Developer
           </h1>
-          <p>
+          <p className="intro-description">
             I am a software developer in the training process of transitioning
             <br />
             from a diverse background in architecture to the dynamic world of
@@ -35,25 +33,17 @@ function IntroducePage() {
           <a href={myCV.link} target="_blank" rel="noreferrer">
             <button>Download CV</button>
           </a>
-          <button onClick={() => setIsOpen(!isOpen)}>Hire me</button>
-          {isOpen && (
-            <ul className="intro-contact">
-              {contactInfo.map((item) => (
-                <div key={item.id} className="contact-item">
-                  <a href={item.content} target="_blank" rel="noreferrer">
-                    <img src={item.image} width="32px" alt="icon" />
-                  </a>
-                </div>
-              ))}
-            </ul>
-          )}
+          <button>
+            <Link smooth to="#contact" className="hireme">
+              Hire me
+            </Link>
+          </button>
         </div>
       </div>
       <div>
         <img
           src={Launching}
-          alt=""
-          height="350px"
+          alt="graphic-launching"
           data-aos="fade-left"
           data-aos-duration="1500"
         />

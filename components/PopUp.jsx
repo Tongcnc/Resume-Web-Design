@@ -32,11 +32,11 @@ function PopUp({ setShowPopup, activeID, portfolioInfo }) {
                   rel="noreferrer"
                   className="popup-link"
                 >
-                  my demo website
+                  my website
                 </a>
               ) : null}
             </div>
-            <p>{project.description}</p>
+            <p className="popup-description">{project.description}</p>
             <div className="tech-box">
               <p>Technologies:</p>
               {project.tech.map((tech, index) => (
