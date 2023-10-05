@@ -20,7 +20,7 @@ function ContactPage() {
                   />
                 </a>
                 <h3>{item.title}</h3>
-                <p>{item.content}</p>
+                <p className="contact-text">{item.content}</p>
                 <a
                   href={item.link}
                   target="_blank"

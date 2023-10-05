@@ -161,11 +161,6 @@ moon::before {
     scale: 0.6;
   }
 
-  .educationWork-title {
-    margin-bottom: 0px;
-    max-width: 390px;
-  }
-
   .educationWork-container {
     gap: 0px;
   }
@@ -188,6 +183,7 @@ moon::before {
   .educationWork-title {
     font-size: 1.6rem;
     text-align: center;
+    margin-bottom: -145px;
   }
 
   .detail-desc {

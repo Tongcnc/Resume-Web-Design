@@ -161,7 +161,7 @@ export const contactInfo = [
     title: "LinkedIn",
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-4.png&r=255&g=255&b=255",
-    content: "Chanokchol Klamphu",
+    content: "Chanokchol K.",
     link: "https://www.linkedin.com/in/chanokchol-klamphu/",
   },
   {
