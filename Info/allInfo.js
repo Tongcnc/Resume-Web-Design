@@ -153,28 +153,32 @@ export const contactInfo = [
     title: "Github",
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-github-1.png&r=255&g=255&b=255",
-    content: "https://github.com/Tongcnc",
+    content: "Tongcnc",
+    link: "https://github.com/Tongcnc",
+  },
+  {
+    id: 2,
+    title: "LinkedIn",
+    image:
+      "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-4.png&r=255&g=255&b=255",
+    content: "Chanokchol Klamphu",
+    link: "https://www.linkedin.com/in/chanokchol-klamphu/",
   },
   {
     id: 3,
-    title: "Linkedin",
-    image:
-      "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-linkedin-4.png&r=255&g=255&b=255",
-    content: "https://www.linkedin.com/in/chanokchol-klamphu/",
-  },
-  {
-    id: 4,
     title: "Email",
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-email-10.png&r=255&g=255&b=255",
     content: "tongcnc3@gmail.com",
+    link: "mailto:tongcnc3@gmail.com",
   },
   {
-    id: 5,
-    title: "Telphone",
+    id: 4,
+    title: "Phone number",
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-phone-8.png&r=255&g=255&b=255",
     content: "0925542693",
+    link: "tel:0925542693",
   },
 ];
 

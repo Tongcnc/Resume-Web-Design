@@ -1,47 +1,53 @@
 import "../src/App.css";
 import { contactInfo } from "../Info/allInfo";
-import { useState } from "react";
+import { HashLink as Link } from "react-router-hash-link";
 
 function ContactPage() {
-  const [text, setText] = useState("contact me");
-
-  function addMsg(item) {
-    setText(item.content);
-  }
-
   return (
     <section id="contact">
-      <div className="show-message">{text}</div>
-      <div className="contact-list">
-        {contactInfo.map((item) => {
-          if (item.id === 1 || item.id === 2 || item.id === 3) {
+      <div className="box-container">
+        <p>Get in Touch</p>
+        <h2>Contact Me</h2>
+        <div className="box-contact">
+          {contactInfo.map((item) => {
             return (
-              <div
-                key={item.id}
-                className="contact-item"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <a href={item.content} target="_blank" rel="noreferrer">
-                  <img src={item.image} width="40px" alt="icon" />
+              <div key={item.id} className="contact-item">
+                <a href={item.link} target="_blank" rel="noreferrer">
+                  <img
+                    src={item.image}
+                    alt="social-icon"
+                    className="social-icon"
+                  />
+                </a>
+                <h3>{item.title}</h3>
+                <p>{item.content}</p>
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="contact-me"
+                >
+                  <p>Contact me</p>
+                  <img
+                    src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.0.0/png/iconmonstr-arrow-right-lined.png&r=201&g=97&b=222"
+                    alt="arrow"
+                  />
                 </a>
               </div>
             );
-          } else {
-            return (
-              <div
-                key={item.id}
-                className="contact-item"
-                data-aos="fade-up"
-                data-aos-duration="1500"
-              >
-                <a onClick={() => addMsg(item)}>
-                  <img src={item.image} width="40px" alt="icon" />
-                </a>
-              </div>
-            );
-          }
-        })}
+          })}
+        </div>
+      </div>
+      <div className="scrollTop-container">
+        {/* <p>Get in Touch</p>
+        <h2>Chanokchol Klamphu</h2> */}
+        <Link smooth to="#top" className="scrollTop">
+          scroll to top
+          <img
+            src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2014/png/iconmonstr-rocket-14.png&r=201&g=97&b=222"
+            alt="rocket-icon"
+          />
+        </Link>
       </div>
     </section>
   );

@@ -5,7 +5,8 @@ function EducationAndWorkPage() {
   return (
     <>
       <div className="educationWork-list" id="education">
-        <h2 className="educationWork-title">Educations and Work Experirence</h2>
+        <p>My Experirence</p>
+        <h2 className="educationWork-title">Educations and Work</h2>
         <div className="educationWork-container">
           {educationAndWork.map((item) => {
             return (

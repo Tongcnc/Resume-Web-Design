@@ -11,14 +11,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* color: var(--secondary-color); */
 }
 
 .popup-container {
-  /* backdrop-filter: blur(60px);
-  background-color: rgba(255, 255, 255, 0.35); */
-  background-color: var(--primary-color);
-  /* background-color: var(--secondary-color); */
+  backdrop-filter: blur(60px);
+  background-color: rgba(255, 255, 255, 0.1);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 550px;
@@ -45,7 +42,8 @@
 }
 
 .popup-button {
-  background: var(--primary-color);
+  backdrop-filter: blur(30px);
+  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: flex-end;
   align-items: center;
