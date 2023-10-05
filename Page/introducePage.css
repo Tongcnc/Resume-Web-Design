@@ -26,7 +26,7 @@ h1 {
     width: 0;
   }
   to {
-    width: 30%;
+    width: 28%;
   }
 }
 @keyframes blink {
@@ -87,6 +87,20 @@ h1 {
   .intro-button {
     padding-top: 50px;
   }
+
+  .intro-name {
+    animation: typingmid 5s steps(30) infinite alternate,
+      blink 0.5s step-end infinite alternate;
+  }
+
+  @keyframes typingmid {
+    frame {
+      width: 0;
+    }
+    to {
+      width: 35%;
+    }
+  }
 }
 
 /* media query :phone*/
@@ -115,5 +129,19 @@ h1 {
 
   .intro-button {
     padding-top: 30px;
+  }
+
+  .intro-name {
+    animation: typingsmall 5s steps(30) infinite alternate,
+      blink 0.5s step-end infinite alternate;
+  }
+
+  @keyframes typingsmall {
+    frame {
+      width: 0;
+    }
+    to {
+      width: 50%;
+    }
   }
 }

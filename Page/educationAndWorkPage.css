@@ -71,8 +71,12 @@
   margin: 15px 10px;
 }
 
-.contain img {
+.image {
   animation: float 5s ease-out infinite;
+}
+
+.detail-desc img {
+  margin-right: 20px;
 }
 
 /* -------------------- */

@@ -11,7 +11,12 @@ function EducationAndWorkPage() {
             return (
               <div key={item.id} className="contain">
                 <div className="sun">
-                  <img src={item.image} alt="image" height="300px" />
+                  <img
+                    src={item.image}
+                    alt="image"
+                    height="300px"
+                    className="image"
+                  />
                   <p>{item.year}</p>
                   <h2>{item.name}</h2>
 
@@ -41,18 +46,36 @@ function EducationAndWorkPage() {
                                   data-aos="fade-right"
                                   data-aos-duration="1500"
                                 >
+                                  <img
+                                    src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-check-mark-4.png&r=201&g=97&b=222"
+                                    alt="check-icon"
+                                    width="20px"
+                                    height="20px"
+                                  />
                                   {detail.description[0]}
                                 </li>
                                 <li
                                   data-aos="fade-left"
                                   data-aos-duration="1200"
                                 >
+                                  <img
+                                    src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-check-mark-4.png&r=201&g=97&b=222"
+                                    alt="check-icon"
+                                    width="20px"
+                                    height="20px"
+                                  />
                                   {detail.description[1]}
                                 </li>
                                 <li
                                   data-aos="fade-right"
                                   data-aos-duration="1200"
                                 >
+                                  <img
+                                    src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-check-mark-4.png&r=201&g=97&b=222"
+                                    alt="check-icon"
+                                    width="20px"
+                                    height="20px"
+                                  />
                                   {detail.description[2]}
                                 </li>
                               </ul>

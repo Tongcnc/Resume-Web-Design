@@ -44,7 +44,7 @@ export const educationAndWork = [
     details: [
       {
         id: 1,
-        name: "Junior Architecture / Interior Designer,",
+        name: "Architecture / Interior Designer,",
         year: "Jun 2021 - Jan 2023",
         school: "PRIMARY WORKSHOP AND DESIGN COMPANY LIMITED",
         description: [
@@ -154,13 +154,6 @@ export const contactInfo = [
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-github-1.png&r=255&g=255&b=255",
     content: "https://github.com/Tongcnc",
-  },
-  {
-    id: 2,
-    title: "Instragram",
-    image:
-      "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2016/png/iconmonstr-instagram-14.png&r=255&g=255&b=255",
-    content: "https://instagram.com/tongcnc?igshid=MzRlODBiNWFlZA%3D%3D",
   },
   {
     id: 3,

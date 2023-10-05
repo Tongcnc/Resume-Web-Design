@@ -11,7 +11,7 @@ function MySkillPage() {
             <div key={item.id} className="skill">
               <div className="skill-title-box">
                 <img
-                  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.2.0/png/iconmonstr-check-mark-circle-filled.png&r=255&g=255&b=255"
+                  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.5.0/png/iconmonstr-3d-lined.png&r=255&g=255&b=255"
                   alt="check icon"
                   width="50px"
                 />
