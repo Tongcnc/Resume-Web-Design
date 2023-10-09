@@ -9,19 +9,21 @@ function IntroducePage() {
       <div className="intro-container">
         <div>
           <p className="intro-greeting">{"Hi!  I'm"}</p>
-          <p className="intro-name">Chanokchol Klamphu</p>
-          <h1
+          {/* <p className="intro-name">Chanokchol Klamphu</p> */}
+          <h1 className="intro-name">Chanokchol Klamphu</h1>
+          <p
             className="intro-carreer"
             data-aos="fade-up"
             data-aos-duration="1500"
           >
             Fullstack Developer
-          </h1>
+          </p>
+
           <p className="intro-description">
             I am a software developer in the training process of transitioning
-            <br />
+            {/* <br /> */}
             from a diverse background in architecture to the dynamic world of
-            <br />
+            {/* <br /> */}
             software development.
           </p>
         </div>
@@ -40,14 +42,14 @@ function IntroducePage() {
           </button>
         </div>
       </div>
-      <div>
-        <img
-          src={Launching}
-          alt="graphic-launching"
-          data-aos="fade-left"
-          data-aos-duration="1500"
-        />
-      </div>
+      {/* <div className="launching-image"> */}
+      <img
+        src={Launching}
+        alt="graphic-launching"
+        data-aos="fade-left"
+        data-aos-duration="1500"
+      />
+      {/* </div> */}
     </div>
   );
 }

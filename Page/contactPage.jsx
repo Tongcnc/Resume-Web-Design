@@ -17,6 +17,8 @@ function ContactPage() {
                     src={item.image}
                     alt="social-icon"
                     className="social-icon"
+                    data-aos="zoom-in"
+                    data-aos-duration="800"
                   />
                 </a>
                 <h3>{item.title}</h3>
@@ -26,6 +28,8 @@ function ContactPage() {
                   target="_blank"
                   rel="noreferrer"
                   className="contact-me"
+                  data-aos="flip-right"
+                  data-aos-duration="1000"
                 >
                   <p>Contact me</p>
                   <img
@@ -39,15 +43,19 @@ function ContactPage() {
         </div>
       </div>
       <div className="scrollTop-container">
-        {/* <p>Get in Touch</p>
-        <h2>Chanokchol Klamphu</h2> */}
-        <Link smooth to="#top" className="scrollTop">
-          scroll to top
-          <img
-            src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2014/png/iconmonstr-rocket-14.png&r=201&g=97&b=222"
-            alt="rocket-icon"
-          />
-        </Link>
+        <div className="rocket-box">
+          <Link smooth to="#top" className="scrollTop">
+            scroll to top
+            <img
+              src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2014/png/iconmonstr-rocket-1.png&r=201&g=97&b=222"
+              alt="rocket-icon"
+            />
+          </Link>
+          <div className="circle"></div>
+          <div className="rocket-circle big"></div>
+          <div className="rocket-circle small right"></div>
+          <div className="rocket-circle small left"></div>
+        </div>
       </div>
     </section>
   );

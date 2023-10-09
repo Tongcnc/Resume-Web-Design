@@ -68,7 +68,7 @@ function NavigationBar() {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              skills
+              abilities
             </Link>
           </li>
           <li className="link">
@@ -79,7 +79,7 @@ function NavigationBar() {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              Work
+              Projects
             </Link>
           </li>
           <li className="link">
@@ -105,7 +105,7 @@ function NavigationBar() {
         </li>
         <li className="link">
           <Link smooth to="#skill">
-            skills
+            Abilities
           </Link>
         </li>
         <li>
@@ -120,7 +120,7 @@ function NavigationBar() {
         </li>
         <li className="link">
           <Link smooth to="#projects">
-            Work
+            Projects
           </Link>
         </li>
         <li className="link">

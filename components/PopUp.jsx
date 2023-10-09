@@ -12,7 +12,11 @@ function PopUp({
 
   return (
     <div className="popup-main">
-      <div className="popup-main-box">
+      <div
+        className="popup-main-box"
+        data-aos="zoom-in-up"
+        data-aos-duration="500"
+      >
         <div className="popup-button">
           <button onClick={() => setShowPopup(false)} className="buttonX">
             <img

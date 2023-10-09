@@ -3,21 +3,29 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  gap: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -25px;
 }
 
-h1 {
-  font-size: 4rem;
+.intro-container {
+  width: 45%;
+}
+
+.intro-description {
+  max-width: 85%;
 }
 
 .intro-name {
   margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 3rem;
   color: var(--highlight-color);
   white-space: nowrap;
   overflow: hidden;
   width: 0;
   border-right: 3px solid;
-  animation: typing 5s steps(30) infinite alternate,
+  animation: typing 4s steps(30) infinite alternate,
     blink 0.5s step-end infinite alternate;
 }
 
@@ -26,13 +34,22 @@ h1 {
     width: 0;
   }
   to {
-    width: 28%;
+    width: 90%;
   }
 }
 @keyframes blink {
   50% {
     border-color: transparent;
   }
+}
+
+.intro-carreer {
+  font-weight: 600;
+  font-size: 1.8rem;
+}
+
+.intro-description {
+  margin-top: 10px;
 }
 
 .intro-button {
@@ -75,13 +92,10 @@ h1 {
 
 /* media query */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-  h1 {
-    font-size: 3rem;
-  }
-
   .intro-page {
     flex-direction: column-reverse;
     align-items: center;
+    gap: 50px;
   }
 
   .intro-button {
@@ -89,8 +103,17 @@ h1 {
   }
 
   .intro-name {
+    /* font-size: 1.6rem; */
     animation: typingmid 5s steps(30) infinite alternate,
       blink 0.5s step-end infinite alternate;
+  }
+
+  .intro-container {
+    width: 70%;
+  }
+
+  .intro-description {
+    max-width: 100%;
   }
 
   @keyframes typingmid {
@@ -98,33 +121,35 @@ h1 {
       width: 0;
     }
     to {
-      width: 35%;
+      width: 104%;
     }
   }
 }
 
 /* media query :phone*/
 @media screen and (min-width: 390px) and (max-width: 767px) {
-  h1 {
-    font-size: 2rem;
+  .intro-page {
+    margin-top: -130px;
+    flex-direction: column-reverse;
+    align-items: center;
   }
 
   .intro-description {
     font-size: 14px;
   }
 
-  .intro-page {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
   .intro-page img {
-    /* scale: 0.6; */
-    display: none;
+    scale: 0.6;
+    /* display: none; */
   }
 
   .intro-container {
-    width: 75%;
+    width: 80%;
+  }
+
+  .intro-button,
+  .intro-description {
+    max-width: 80%;
   }
 
   .intro-button {
@@ -132,8 +157,17 @@ h1 {
   }
 
   .intro-name {
+    font-size: 1.6rem;
     animation: typingsmall 5s steps(30) infinite alternate,
       blink 0.5s step-end infinite alternate;
+  }
+
+  .intro-carreer {
+    font-size: 1.2rem;
+  }
+
+  .intro-button button {
+    width: 130px;
   }
 
   @keyframes typingsmall {
@@ -141,7 +175,7 @@ h1 {
       width: 0;
     }
     to {
-      width: 50%;
+      width: 80%;
     }
   }
 }

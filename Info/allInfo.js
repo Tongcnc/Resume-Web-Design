@@ -174,7 +174,7 @@ export const contactInfo = [
   },
   {
     id: 4,
-    title: "Phone number",
+    title: "Phone",
     image:
       "https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/2012/png/iconmonstr-phone-8.png&r=255&g=255&b=255",
     content: "0925542693",

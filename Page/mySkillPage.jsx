@@ -8,7 +8,7 @@ function MySkillPage() {
         <p>My abilities</p>
         <h2 className="skill-title">Experience</h2>
       </div>
-      <div className="skill-list">
+      <div className="skill-list" data-aos="flip-up">
         {mySkillInfo.map((item) => {
           return (
             <div key={item.id} className="skill">

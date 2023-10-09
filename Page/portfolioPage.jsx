@@ -1,7 +1,7 @@
 import "../src/App.css";
 import { portfolioInfoFront } from "../Info/allInfo";
 import { portfolioInfoBack } from "../Info/allInfo";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PopUp from "../components/popUp";
 
 function PortfolioPage() {
@@ -18,6 +18,10 @@ function PortfolioPage() {
     setActiveTab(tab);
   };
 
+  useEffect(() => {
+    setActiveTab("All");
+  }, []);
+
   const conbineForAll = [...portfolioInfoFront, ...portfolioInfoBack];
 
   return (
@@ -25,7 +29,12 @@ function PortfolioPage() {
       <p>My Portfolio</p>
       <h2 className="port-title">Recent work</h2>
       <div className="tabs">
-        <button onClick={() => changeTab("All")}>All</button>
+        <button
+          onClick={() => changeTab("All")}
+          className={`tab-button ${activeTab === "All" ? "focused" : ""}`}
+        >
+          All
+        </button>
         <button onClick={() => changeTab("Front-End")}>Front-End</button>
         <button onClick={() => changeTab("Back-End")}>Back-End</button>
       </div>

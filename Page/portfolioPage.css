@@ -26,6 +26,7 @@
 }
 
 .tabs button:active,
+.tabs button.focused,
 .tabs button:focus {
   background-color: rgb(175, 56, 198);
   border: 1px solid rgb(175, 56, 198);

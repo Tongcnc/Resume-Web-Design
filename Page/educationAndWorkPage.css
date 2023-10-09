@@ -29,6 +29,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
+  height: 2750px;
 }
 
 .detail-main-container {
@@ -40,10 +42,8 @@
 
 .detail-container {
   display: flex;
-  width: 50em;
   gap: 40px;
-  width: 100%;
-  z-index: 80;
+  z-index: 50;
 }
 
 .detail-boxL {
@@ -155,6 +155,18 @@ moon::before {
   }
 }
 
+/* media query */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .educationWork-container {
+    gap: 600px;
+    height: 1500px;
+  }
+
+  .contain {
+    scale: 0.85;
+  }
+}
+
 /* media query :phone*/
 @media screen and (min-width: 390px) and (max-width: 767px) {
   .contain {
@@ -163,6 +175,7 @@ moon::before {
 
   .educationWork-container {
     gap: 0px;
+    height: 1500px;
   }
 
   .detail-main-container {

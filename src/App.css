@@ -24,17 +24,25 @@ body {
 .App {
   display: flex;
   flex-direction: column;
-  gap: 150px;
+  gap: 200px;
   /* background: linear-gradient(
     180deg,
     rgb(19, 21, 94) 0%,
     rgb(25, 52, 103) 100%
   ); */
   background: rgb(23, 25, 103);
+  /* overflow: hidden; */
 }
 
 #shadow-host-companion {
   display: none;
+}
+
+/* media query */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .App {
+    gap: 140px;
+  }
 }
 
 /* media query :phone*/
