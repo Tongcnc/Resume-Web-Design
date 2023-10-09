@@ -53,10 +53,8 @@
 }
 
 .buttonX {
-  border: none;
-  background: none;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .popup-content {
@@ -84,12 +82,14 @@
   font-size: 12px;
   padding: 5px;
   border: 2px solid var(--highlight-color);
+  font-weight: 500;
 }
 
 .popup-link:hover {
   background-color: var(--highlight-color);
   transition: 0.2s;
   transform: scale(1.1);
+  color: var(--primary-color);
 }
 
 .link-container {
