@@ -18,7 +18,7 @@
   padding: 5px 15px;
   border-radius: 15px;
   cursor: pointer;
-  border: 1px solid rgb(23, 25, 103);
+  border: transparent;
 }
 
 .tabs button:hover {
@@ -30,13 +30,13 @@
 .tabs button:focus {
   background-color: rgb(175, 56, 198);
   border: 1px solid rgb(175, 56, 198);
-  color: var(--secondary-color);
+  color: var(--white-color);
 }
 
 .port-title {
   color: var(--highlight-color);
   font-size: 2rem;
-  text-shadow: 2px 2px 20px rgba(248, 249, 250, 0.4);
+  text-shadow: 2px 2px 20px var(--shadow-text);
   margin-bottom: 50px;
 }
 
@@ -49,9 +49,8 @@
 }
 
 .port {
-  /* background-color: var(--primary-color); */
   backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background: var(--shadow-color);
   border-radius: 15px;
   padding: 20px;
   display: flex;

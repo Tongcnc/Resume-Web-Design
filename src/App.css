@@ -1,12 +1,23 @@
 :root {
-  --primary-color: #0f103f;
+  --primary-color: #171967;
   --secondary-color: #f8f9fa;
   --highlight-color: #c961de;
   --dark-color: #444444;
+  --white-color: #f8f9fa;
 
-  --text-large-size: large;
-  --text-medium-size: medium;
-  --text-small-size: small;
+  --shadow-color: rgba(255, 255, 255, 0.1);
+  --shadow-highlight: #f8f9fa;
+  --shadow-text: rgba(250, 250, 250, 0.4);
+  --background-color: rgba(15, 16, 63, 0.5);
+}
+.dark-theme {
+  --primary-color: #f8f9fa;
+  --secondary-color: #171967;
+
+  --shadow-color: rgba(233, 233, 233, 0.5);
+  --shadow-highlight: #c961de;
+  --shadow-text: rgba(201, 97, 222, 0.5);
+  --background-color: rgba(142, 147, 168, 0.5);
 }
 
 * {
@@ -30,7 +41,7 @@ body {
     rgb(19, 21, 94) 0%,
     rgb(25, 52, 103) 100%
   ); */
-  background: rgb(23, 25, 103);
+  background: var(--primary-color);
   /* overflow: hidden; */
 }
 

@@ -1,6 +1,6 @@
 /* Contact Page */
 .scrollTop-container {
-  background-color: rgba(15, 16, 63, 0.5);
+  background-color: var(--background-color);
   padding-top: 210px;
   padding-bottom: 35px;
   display: flex;
@@ -8,7 +8,7 @@
 
   border-top-right-radius: 100px;
   border-top-left-radius: 100px;
-  padding-right: 100px;
+  padding-right: 60px;
 }
 
 .contact-item {
@@ -16,6 +16,11 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+
+.contact-item p,
+.contact-item h3 {
+  color: var(--secondary-color);
 }
 
 .contact-item img {
@@ -46,7 +51,7 @@
   height: 10px;
   width: 10px;
   border-radius: 50%;
-  background-color: var(--secondary-color);
+  background-color: var(--white-color);
   top: 5px;
   right: 7.5px;
   position: absolute;
@@ -54,7 +59,7 @@
 
 .rocket-circle {
   border-radius: 50%;
-  background-color: var(--secondary-color);
+  background-color: var(--white-color);
   animation: rocket 2.4s ease-out infinite;
 }
 
@@ -113,7 +118,7 @@ section {
 
 .box-container {
   backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--shadow-color);
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
@@ -131,7 +136,7 @@ section {
 .box-container h2 {
   color: var(--highlight-color);
   font-size: 2rem;
-  text-shadow: 2px 2px 20px rgba(248, 249, 250, 0.4);
+  text-shadow: 2px 2px 20px var(--shadow-text);
   margin-bottom: 30px;
 }
 
@@ -166,9 +171,15 @@ section {
   transition: 0.6s;
 }
 
+.contact-item .social-icon {
+  border-radius: 50%;
+  border: transparent;
+}
+
 .contact-item:hover .social-icon {
-  transform: scale(1.2);
-  transition: transform 0.5s ease;
+  /* transform: scale(1.2);
+  transition: transform 0.5s ease; */
+  transition: 0.2s;
   border: 4px solid var(--highlight-color);
   border-radius: 50%;
   cursor: pointer;

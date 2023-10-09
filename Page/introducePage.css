@@ -25,7 +25,7 @@
   overflow: hidden;
   width: 0;
   border-right: 3px solid;
-  animation: typing 4s steps(30) infinite alternate,
+  animation: typing 5.5s steps(30) infinite alternate,
     blink 0.5s step-end infinite alternate;
 }
 
@@ -34,7 +34,7 @@
     width: 0;
   }
   to {
-    width: 90%;
+    width: 84%;
   }
 }
 @keyframes blink {
@@ -60,6 +60,7 @@
 }
 
 .intro-button button {
+  color: var(--white-color);
   width: 180px;
   height: 40px;
   border: none;
@@ -71,6 +72,10 @@
     rgba(201, 97, 222, 1) 0%,
     rgba(41, 84, 163, 1) 100%
   );
+}
+
+.hireme {
+  color: var(--white-color);
 }
 
 .intro-button button:hover {

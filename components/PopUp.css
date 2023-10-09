@@ -15,7 +15,7 @@
 
 .popup-container {
   backdrop-filter: blur(60px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--shadow-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   width: 550px;
@@ -43,7 +43,7 @@
 
 .popup-button {
   backdrop-filter: blur(60px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--shadow-color);
   display: flex;
   justify-content: flex-end;
   align-items: center;

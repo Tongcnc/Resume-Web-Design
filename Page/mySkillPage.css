@@ -1,6 +1,5 @@
 /*Skill Page */
 .skill-container {
-  /* margin-top: 700px; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +10,7 @@
 .skill-title {
   color: var(--highlight-color);
   font-size: 2rem;
-  text-shadow: 2px 2px 20px rgba(248, 249, 250, 0.4);
+  text-shadow: 2px 2px 20px var(--shadow-text);
 }
 
 .skill-list {
@@ -26,9 +25,8 @@
 
 .skill {
   flex: 1;
-  /* background-color: var(--primary-color); */
   backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--shadow-color);
   border-radius: 10px;
   padding: 30px;
   margin-left: 50px;
