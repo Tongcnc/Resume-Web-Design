@@ -1,13 +1,13 @@
 /* Education and Work Page */
 @keyframes float {
   0% {
-    transform: translateY(0px);
+    transform: translateY(-10px);
   }
   50% {
-    transform: translateY(-40px);
+    transform: translateY(-30px);
   }
   100% {
-    transform: translateY(0px);
+    transform: translateY(-10px);
   }
 }
 
@@ -72,11 +72,16 @@
 }
 
 .image {
-  animation: float 5s ease-out infinite;
+  animation: float 4s ease-out infinite;
 }
 
 .detail-desc img {
   margin-right: 20px;
+}
+
+.text-year {
+  font-weight: 600;
+  text-shadow: 2px 2px 20px var(--shadow-text);
 }
 
 /* -------------------- */
@@ -96,10 +101,15 @@
   left: 15em;
   width: 20em;
   height: 20em;
-  background: linear-gradient(
+  /* background: linear-gradient(
     120deg,
     rgba(201, 97, 222, 1) 0%,
     rgba(41, 84, 163, 1) 100%
+  ); */
+  background: linear-gradient(
+    120deg,
+    rgba(41, 84, 163, 1) 0%,
+    rgba(201, 97, 222, 1) 100%
   );
   border-radius: 50%;
   box-shadow: 0 0 3em var(--shadow-highlight);
@@ -185,7 +195,14 @@ moon::before {
   .detail-main-container p,
   h3 {
     scale: 1.2;
-    line-height: 1.6;
+  }
+
+  .detail-boxR h3 {
+    margin-bottom: 25px;
+  }
+
+  .detail-boxR p {
+    margin-left: 15px;
   }
 
   .sun p,

@@ -134,7 +134,7 @@
 /* media query :phone*/
 @media screen and (min-width: 390px) and (max-width: 767px) {
   .intro-page {
-    margin-top: -130px;
+    margin-top: -250px;
     flex-direction: column-reverse;
     align-items: center;
   }
@@ -145,7 +145,6 @@
 
   .intro-page img {
     scale: 0.6;
-    /* display: none; */
   }
 
   .intro-container {

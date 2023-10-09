@@ -26,6 +26,7 @@ function PortfolioPage() {
 
   return (
     <div className="port-container" id="projects">
+      <div className="space"></div>
       <p>My Portfolio</p>
       <h2 className="port-title">Recent work</h2>
       <div className="tabs">

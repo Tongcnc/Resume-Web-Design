@@ -1,4 +1,8 @@
 /*Skill Page */
+.space {
+  height: 120px;
+}
+
 .skill-container {
   display: flex;
   flex-direction: column;

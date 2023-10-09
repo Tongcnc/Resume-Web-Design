@@ -17,7 +17,7 @@
   --shadow-color: rgba(233, 233, 233, 0.5);
   --shadow-highlight: #c961de;
   --shadow-text: rgba(201, 97, 222, 0.5);
-  --background-color: rgba(142, 147, 168, 0.5);
+  --background-color: rgba(123, 127, 145, 0.5);
 }
 
 * {
@@ -36,13 +36,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 200px;
-  /* background: linear-gradient(
-    180deg,
-    rgb(19, 21, 94) 0%,
-    rgb(25, 52, 103) 100%
-  ); */
   background: var(--primary-color);
-  /* overflow: hidden; */
 }
 
 #shadow-host-companion {

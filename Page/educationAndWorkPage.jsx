@@ -5,6 +5,7 @@ function EducationAndWorkPage() {
   return (
     <>
       <div className="educationWork-list" id="education">
+        <span className="space"></span>
         <p>My Experirence</p>
         <h2 className="educationWork-title">Educations and Work</h2>
         <div className="educationWork-container">
@@ -18,7 +19,7 @@ function EducationAndWorkPage() {
                     height="300px"
                     className="image"
                   />
-                  <p>{item.year}</p>
+                  <p className="text-year">{item.year}</p>
                   <h2>{item.name}</h2>
 
                   <div className="detail-main-container">

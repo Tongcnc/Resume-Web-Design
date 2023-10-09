@@ -171,6 +171,14 @@ section {
   transition: 0.6s;
 }
 
+.social-icon {
+  width: 50px;
+  height: 50px;
+  /* stroke: var(--secondary-color); */
+  /* stroke-width: 2; */
+  fill: var(--secondary-color);
+}
+
 .contact-item .social-icon {
   border-radius: 50%;
   border: transparent;
@@ -196,7 +204,7 @@ section {
     padding-right: 75px;
   }
 
-  .contact-item img {
+  .contact-item svg {
     width: 55px;
   }
 
@@ -252,7 +260,7 @@ section {
     margin-bottom: 30px;
   }
 
-  .contact-item img {
+  .contact-item svg {
     width: 35px;
   }
 

@@ -18,18 +18,18 @@
   padding: 5px 15px;
   border-radius: 15px;
   cursor: pointer;
-  border: transparent;
+  border: 1px solid var(--primary-color);
 }
 
 .tabs button:hover {
-  border: 1px solid rgb(229, 117, 252);
+  border: 1px solid var(--highlight-color);
 }
 
 .tabs button:active,
 .tabs button.focused,
 .tabs button:focus {
-  background-color: rgb(175, 56, 198);
-  border: 1px solid rgb(175, 56, 198);
+  background-color: var(--highlight-color);
+  border: 1px solid var(--highlight-color);
   color: var(--white-color);
 }
 

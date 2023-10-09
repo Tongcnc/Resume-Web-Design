@@ -3,11 +3,9 @@
   position: sticky;
   top: 30px;
   z-index: 100;
-  /* position: relative; */
 
   margin-left: auto;
   margin-right: auto;
-  /* margin-top: 30px; */
 }
 
 .nav-container {
@@ -30,13 +28,13 @@
 }
 
 .dark-mode {
-  /* position: absolute; */
   position: fixed;
-  top: 32px;
-  right: 75px;
+  top: 45px;
+  right: 65px;
   background: none;
   border: none;
   cursor: pointer;
+  z-index: 125;
 }
 
 .link a {
@@ -48,8 +46,7 @@
 
 .link a:hover,
 .link a:active {
-  border-bottom: 2px solid var(--highlight-color);
-  transition: 0.2s;
+  border-bottom: 3px solid var(--highlight-color);
 }
 
 #profile-icon {
@@ -72,6 +69,11 @@
   .nav-container {
     gap: 50px;
   }
+
+  .dark-mode {
+    top: 45px;
+    right: 30px;
+  }
 }
 
 /* media query:mobile */
@@ -83,7 +85,7 @@
   .container-mobile-icon {
     display: flex;
     justify-content: space-between;
-    padding: 30px;
+    padding: 45px 30px 30px 30px;
     position: sticky;
     top: 0px;
     cursor: pointer;
@@ -108,14 +110,8 @@
     gap: 50px;
   }
 
-  .link a {
-    padding: 10px 20px;
-    color: var(--secondary-color);
-  }
-
-  .link a:hover,
-  .link a:active {
-    border-bottom: 3px solid var(--highlight-color);
-    transition: 0.2s;
+  .dark-mode {
+    top: 48px;
+    right: 90px;
   }
 }

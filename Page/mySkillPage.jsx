@@ -4,6 +4,7 @@ import { mySkillInfo } from "../Info/allInfo";
 function MySkillPage() {
   return (
     <div className="skill-container" id="skill">
+      <span className="space"></span>
       <div className="skill-text-box">
         <p>My abilities</p>
         <h2 className="skill-title">Experience</h2>
