@@ -19,9 +19,10 @@ function IntroducePage() {
           </p>
 
           <p className="intro-description">
-            I am a software developer in the training process of transitioning
-            from a diverse background in architecture to the dynamic world of
-            software development.
+            I am a software developer transitioning from a diverse background in
+            architecture to the dynamic world of software development.
+            {/* <br />I bring a unique blend of creativity, strategic thinking, and
+            determination to my pursuit of becoming an software developer. */}
           </p>
         </div>
         <div

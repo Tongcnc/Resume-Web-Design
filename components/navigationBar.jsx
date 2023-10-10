@@ -72,7 +72,7 @@ function NavigationBar() {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              experiences
+              Experiences
             </Link>
           </li>
           <li className="link">
@@ -83,7 +83,7 @@ function NavigationBar() {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              abilities
+              Abilities
             </Link>
           </li>
           <li className="link">
@@ -120,8 +120,8 @@ function NavigationBar() {
             </Link>
           </li>
           <li className="link">
-            <Link smooth to="#skill">
-              Abilities
+            <Link smooth to="#education">
+              Experiences
             </Link>
           </li>
           <li>

@@ -6,7 +6,7 @@ function MySkillPage() {
     <div className="skill-container" id="skill">
       <span className="space"></span>
       <div className="skill-text-box">
-        <p>My abilities</p>
+        <p>My Abilities</p>
         <h2 className="skill-title">Experience</h2>
       </div>
       <div className="skill-list" data-aos="flip-up">

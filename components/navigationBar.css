@@ -83,6 +83,8 @@
   }
 
   .container-mobile-icon {
+    overflow: hidden;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 45px 30px 30px 30px;
@@ -94,6 +96,8 @@
   }
 
   .nav-container-mobile {
+    /* overflow: hidden; */
+    /* width: screen; */
     backdrop-filter: blur(50px);
     width: 100vw;
     height: 100vh;

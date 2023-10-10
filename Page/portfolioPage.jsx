@@ -28,7 +28,7 @@ function PortfolioPage() {
     <div className="port-container" id="projects">
       <div className="space"></div>
       <p>My Portfolio</p>
-      <h2 className="port-title">Recent work</h2>
+      <h2 className="port-title">Recent Work</h2>
       <div className="tabs">
         <button
           onClick={() => changeTab("All")}
