@@ -7,7 +7,7 @@ function MySkillPage() {
       <span className="space"></span>
       <div className="skill-text-box">
         <p>My Abilities</p>
-        <h2 className="skill-title">Experience</h2>
+        <h2 className="skill-title">Programimg Skill</h2>
       </div>
       <div className="skill-list" data-aos="flip-up">
         {mySkillInfo.map((item) => {

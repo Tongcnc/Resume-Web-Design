@@ -36,8 +36,18 @@ function PortfolioPage() {
         >
           All
         </button>
-        <button onClick={() => changeTab("Front-End")}>Front-End</button>
-        <button onClick={() => changeTab("Back-End")}>Back-End</button>
+        <button
+          onClick={() => changeTab("Front-End")}
+          className={`tab-button ${activeTab === "Front-End" ? "focused" : ""}`}
+        >
+          Front-End
+        </button>
+        <button
+          onClick={() => changeTab("Back-End")}
+          className={`tab-button ${activeTab === "Back-End" ? "focused" : ""}`}
+        >
+          Back-End
+        </button>
       </div>
 
       <div className="port-list">

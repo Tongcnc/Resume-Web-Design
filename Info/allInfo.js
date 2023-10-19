@@ -3,7 +3,7 @@ import article from "../src/image/undraw_articles.svg";
 import FindaBook from "../src/image/book-2.jpg";
 import staticWeb from "../src/image/static-web.jpg";
 import neatlyVDO from "../src/image/neatly.jpg";
-import crudVDO from "../src/image/crud-project-1.png";
+import jobListing from "../src/image/static-job-listing.jpg";
 import resumeWebsite from "../src/image/resume-web.png";
 
 export const educationAndWork = [
@@ -82,16 +82,16 @@ export const mySkillInfo = [
 ];
 
 export const portfolioInfoFront = [
-  {
-    id: 3,
-    title: "Resume-Website",
-    image: resumeWebsite,
-    link: "https://github.com/Tongcnc/Resume-Web-Design",
-    linkdemo: "https://tongcnc-resume-dev.netlify.app",
-    description:
-      "Explore my journey through my resume website. Showcase of my technical prowess and coding skills.",
-    tech: ["Javascript", "React", "CSS"],
-  },
+  // {
+  //   id: 3,
+  //   title: "Resume-Website",
+  //   image: resumeWebsite,
+  //   link: "https://github.com/Tongcnc/Resume-Web-Design",
+  //   linkdemo: "https://tongcnc-resume-dev.netlify.app",
+  //   description:
+  //     "Explore my journey through my resume website. Showcase of my technical prowess and coding skills.",
+  //   tech: ["Javascript", "React", "CSS"],
+  // },
   {
     id: 5,
     title: "Education Website",
@@ -101,6 +101,16 @@ export const portfolioInfoFront = [
     description:
       "Static Education Website | Team mini Project (5 members) | A static education website that provides educational content, resources, and information without dynamic or interactive features.It typically consists of fixed web pages with text, images, and elements, offering information on various educational programs. ",
     tech: ["TailwindCSS", "HTML"],
+  },
+  {
+    id: 4,
+    title: "Static Job Listing",
+    image: jobListing,
+    link: "https://github.com/Tongcnc/static-job-listings.git",
+    linkdemo: "https://project-static-job-listings.netlify.app/",
+    description:
+      "Effortless Job Discovery: Our Website's Advanced Filters and Responsive Design Make Finding Opportunities by Language, Roles, and Tools a Breeze! (Challeange from frontendmentor.io.io)",
+    tech: ["TailwindCSS", "JavaScript", "React"],
   },
 ];
 
@@ -134,16 +144,6 @@ export const portfolioInfoBack = [
       "Express.js",
       "Supabase",
     ],
-  },
-  {
-    id: 4,
-    title: "CRUD Users",
-    image: crudVDO,
-    link: "https://github.com/Tongcnc/crud-users-project.git",
-    linkdemo: null,
-    description:
-      "A website with CRUD features enables users to create,edit and deletate their account",
-    tech: ["TailwindCSS", "JavaScript", "React", "Node.js", "Express.js"],
   },
 ];
 
