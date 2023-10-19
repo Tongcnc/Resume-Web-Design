@@ -109,7 +109,7 @@ export const portfolioInfoFront = [
     link: "https://github.com/Tongcnc/static-job-listings.git",
     linkdemo: "https://project-static-job-listings.netlify.app/",
     description:
-      "Effortless Job Discovery: Our Website's Advanced Filters and Responsive Design Make Finding Opportunities by Language, Roles, and Tools a Breeze! (Challeange from frontendmentor.io.io)",
+      "Effortless Job Discovery: Our Website's Advanced Filters and Responsive Design Make Finding Opportunities by Language, Roles, and Tools a Breeze! (Challeange from frontendmentor.io)",
     tech: ["TailwindCSS", "JavaScript", "React"],
   },
 ];
@@ -183,5 +183,5 @@ export const contactInfo = [
 ];
 
 export const myCV = {
-  link: "https://drive.google.com/file/d/10suUs-gmVlIizArwD7pqwwIEC1-hB8Kr/view?usp=sharing",
+  link: "https://drive.google.com/file/d/1oD8GPq4xh2LvretN8SqWRXZJpb76ouIM/view?usp=sharing",
 };
