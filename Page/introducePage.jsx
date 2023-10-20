@@ -15,12 +15,14 @@ function IntroducePage() {
             data-aos="fade-up"
             data-aos-duration="1500"
           >
-            Fullstack Developer
+            Software Developer
           </p>
 
           <p className="intro-description">
             I am a software developer transitioning from a diverse background in
             architecture to the dynamic world of software development.
+            <br />I bring a unique blend of creativity to becoming an software
+            developer.
             {/* <br />I bring a unique blend of creativity, strategic thinking, and
             determination to my pursuit of becoming an software developer. */}
           </p>

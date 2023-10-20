@@ -77,14 +77,14 @@
 }
 
 /* media query:mobile */
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .nav-container {
     display: none;
   }
 
   .container-mobile-icon {
     overflow: hidden;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
     justify-content: space-between;
     padding: 45px 30px 30px 30px;

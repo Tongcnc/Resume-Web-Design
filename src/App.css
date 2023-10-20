@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   gap: 200px;
   background: var(--primary-color);
+  /* overflow: hidden; */
 }
 
 #shadow-host-companion {
@@ -51,7 +52,7 @@ body {
 }
 
 /* media query :phone*/
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .App {
     gap: 150px;
   }

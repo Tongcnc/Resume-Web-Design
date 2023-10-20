@@ -76,7 +76,7 @@ li img {
 }
 
 /* media query :phone*/
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .skill-container {
     margin-top: -1000px;
     gap: 0px;
@@ -87,10 +87,11 @@ li img {
   }
 
   .skill-list {
+    scale: 0.85;
     display: flex;
     flex-direction: column;
     gap: 60px;
-    margin-top: 80px;
+    margin-top: 50px;
   }
 
   .skill-title {
