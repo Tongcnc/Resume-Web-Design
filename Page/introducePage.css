@@ -34,7 +34,7 @@
     width: 0;
   }
   to {
-    width: 84%;
+    width: 85%;
   }
 }
 @keyframes blink {
@@ -108,7 +108,6 @@
   }
 
   .intro-name {
-    /* font-size: 1.6rem; */
     animation: typingmid 5s steps(30) infinite alternate,
       blink 0.5s step-end infinite alternate;
   }
@@ -126,13 +125,13 @@
       width: 0;
     }
     to {
-      width: 104%;
+      width: 105%;
     }
   }
 }
 
 /* media query :phone*/
-@media screen and (min-width: 390px) and (max-width: 767px) {
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .intro-page {
     margin-top: -250px;
     flex-direction: column-reverse;
@@ -179,7 +178,7 @@
       width: 0;
     }
     to {
-      width: 80%;
+      width: 82%;
     }
   }
 }

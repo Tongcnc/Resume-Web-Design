@@ -30,7 +30,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  height: 2880px;
+  height: 2900px;
 }
 
 .detail-main-container {
@@ -101,11 +101,6 @@
   left: 15em;
   width: 20em;
   height: 20em;
-  /* background: linear-gradient(
-    120deg,
-    rgba(201, 97, 222, 1) 0%,
-    rgba(41, 84, 163, 1) 100%
-  ); */
   background: linear-gradient(
     120deg,
     rgba(41, 84, 163, 1) 0%,

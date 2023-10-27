@@ -14,16 +14,9 @@
   gap: 120px;
   justify-content: center;
   align-items: center;
-  /* position: sticky;
-  top: 30px; */
-  /* z-index: 100; */
   backdrop-filter: blur(20px);
   background-color: var(--shadow-color);
-
   padding: 5px 40px;
-  /* margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px; */
   border-radius: 50px;
 }
 
@@ -84,7 +77,6 @@
 
   .container-mobile-icon {
     overflow: hidden;
-    /* width: 100vw; */
     display: flex;
     justify-content: space-between;
     padding: 45px 30px 30px 30px;
@@ -96,8 +88,6 @@
   }
 
   .nav-container-mobile {
-    /* overflow: hidden; */
-    /* width: screen; */
     backdrop-filter: blur(50px);
     width: 100vw;
     height: 100vh;

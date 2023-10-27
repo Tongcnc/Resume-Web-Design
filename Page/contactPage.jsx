@@ -13,19 +13,12 @@ function ContactPage() {
             return (
               <div key={item.id} className="contact-item">
                 <a href={item.link} target="_blank" rel="noreferrer">
-                  {/* <img
-                    src={item.image}
-                    alt="social-icon"
-                    className="social-icon"
-                    data-aos="zoom-in"
-                    data-aos-duration="800"
-                  /> */}
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                     className="social-icon"
                     data-aos="zoom-in"
-                    data-aos-duration="800"
+                    data-aos-duration="400"
                   >
                     <path d={item.image} />
                   </svg>
