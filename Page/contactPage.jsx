@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <section id="contact">
       <div className="box-container">
-        <p>Get in Touch</p>
+        <p>Let's Talk</p>
         <h2>Contact Me</h2>
         <div className="box-contact">
           {contactInfo.map((item) => {

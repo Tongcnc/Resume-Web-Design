@@ -37,7 +37,6 @@ body {
   flex-direction: column;
   gap: 200px;
   background: var(--primary-color);
-  /* overflow: hidden; */
 }
 
 #shadow-host-companion {

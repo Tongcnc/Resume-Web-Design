@@ -1,7 +1,6 @@
 import "../src/App.css";
 import { myCV } from "../Info/allInfo";
 import { HashLink as Link } from "react-router-hash-link";
-import Launching from "../src/image/undraw_Launching.svg";
 
 function IntroducePage() {
   return (
@@ -41,7 +40,7 @@ function IntroducePage() {
         </div>
       </div>
       <img
-        src={Launching}
+        src="https://res.cloudinary.com/dkcstuaym/image/upload/v1699538644/Resume/icon/undraw_launching_ay12gk.svg"
         alt="graphic-launching"
         data-aos="fade-left"
         data-aos-duration="1500"

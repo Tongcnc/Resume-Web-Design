@@ -18,8 +18,8 @@
   background-color: var(--shadow-color);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  width: 550px;
-  height: 550px;
+  width: 650px;
+  height: 630px;
   overflow-y: scroll;
 }
 
@@ -66,9 +66,9 @@
   gap: 40px;
 }
 
-.popup-content .pic {
-  width: 450px;
-  height: 250px;
+.popup-content iframe {
+  width: 550px;
+  height: 280px;
   border-radius: 10px;
   object-fit: cover;
   overflow: hidden;
@@ -124,7 +124,8 @@
 @media screen and (min-width: 375px) and (max-width: 767px) {
   .popup-container {
     width: 300px;
-    height: 480px;
+    height: 470px;
+    overflow-y: scroll;
   }
 
   .popup-content {
@@ -140,9 +141,9 @@
     scale: 0.7;
   }
 
-  .popup-content .pic {
-    width: 230px;
-    height: 130px;
+  .popup-content iframe {
+    width: 240px;
+    height: 140px;
     margin-top: 10px;
   }
 

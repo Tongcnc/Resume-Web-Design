@@ -1,14 +1,5 @@
-function PopUp({
-  setShowPopup,
-  activeID,
-  portfolioInfoFront,
-  portfolioInfoBack,
-  conbineForAll,
-}) {
-  const project =
-    portfolioInfoFront.find((item) => item.id === activeID) ||
-    portfolioInfoBack.find((item) => item.id === activeID) ||
-    conbineForAll.find((item) => item.id === activeID);
+function PopUp({ setShowPopup, activeID, portfolioInfo }) {
+  const project = portfolioInfo.find((item) => item.id === activeID);
 
   return (
     <div className="popup-main">
@@ -33,7 +24,7 @@ function PopUp({
         </div>
         <div className="popup-container">
           <div className="popup-content">
-            <img src={project.image} className="pic" alt="project" />
+            <iframe src={project.source.video} frameBorder="0"></iframe>
             <div className="popup-box">
               <h2 className="popup-title">{project.title}</h2>
               <div className="link-container">

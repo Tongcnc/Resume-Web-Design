@@ -1,6 +1,5 @@
 import "../src/App.css";
-import { portfolioInfoFront } from "../Info/allInfo";
-import { portfolioInfoBack } from "../Info/allInfo";
+import { portfolioInfo } from "../Info/allInfo";
 import { useState, useEffect } from "react";
 import PopUp from "../components/popUp";
 
@@ -22,129 +21,54 @@ function PortfolioPage() {
     setActiveTab("All");
   }, []);
 
-  const conbineForAll = [...portfolioInfoFront, ...portfolioInfoBack];
-
   return (
     <div className="port-container" id="projects">
       <div className="space"></div>
       <p>My Portfolio</p>
       <h2 className="port-title">Recent Work</h2>
       <div className="tabs">
-        <button
-          onClick={() => changeTab("All")}
-          className={`tab-button ${activeTab === "All" ? "focused" : ""}`}
-        >
-          All
-        </button>
-        <button
-          onClick={() => changeTab("Front-End")}
-          className={`tab-button ${activeTab === "Front-End" ? "focused" : ""}`}
-        >
-          Front-End
-        </button>
-        <button
-          onClick={() => changeTab("Back-End")}
-          className={`tab-button ${activeTab === "Back-End" ? "focused" : ""}`}
-        >
-          Back-End
-        </button>
+        {["All", "Front-End", "Full-Stack"].map((tab) => (
+          <button
+            key={tab}
+            onClick={() => changeTab(tab)}
+            className={`tab-button ${activeTab === tab ? "focused" : ""}`}
+          >
+            {tab}
+          </button>
+        ))}
       </div>
 
       <div className="port-list">
-        {conbineForAll.map((item) => {
-          // Filter items based on the active tab
-          if (activeTab === "All" || item.category === activeTab) {
-            return (
+        {portfolioInfo
+          .filter((item) => activeTab === "All" || item.tab === activeTab)
+          .map((item) => (
+            <div
+              key={item.id}
+              className="port"
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+            >
+              <img src={item.source.image} alt={item.title} />
+              <h3>{item.title}</h3>
               <div
-                key={item.id}
-                className="port"
-                data-aos="zoom-in-up"
-                data-aos-duration="1000"
+                onClick={() => showPopupHandler(item.id)}
+                className="moreDetail"
               >
-                <img src={item.image} alt={item.title} />
-                <h3>{item.title}</h3>
-                <div
-                  onClick={() => showPopupHandler(item.id)}
-                  className="moreDetail"
-                >
-                  <p>more details</p>
-                  <img
-                    src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.0.0/png/iconmonstr-arrow-right-lined.png&r=201&g=97&b=222"
-                    alt="arrow"
-                  />
-                </div>
+                <p>more details</p>
+                <img
+                  src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.0.0/png/iconmonstr-arrow-right-lined.png&r=201&g=97&b=222"
+                  alt="arrow"
+                />
               </div>
-            );
-          }
-          return null; // Exclude items that don't match the active tab
-        })}
-      </div>
-
-      <div className="port-list">
-        {portfolioInfoFront.map((item) => {
-          if (activeTab === "Front-End" || item.category === activeTab) {
-            return (
-              <div
-                key={item.id}
-                className="port"
-                data-aos="zoom-in-up"
-                data-aos-duration="1000"
-              >
-                <img src={item.image} alt={item.title} />
-                <h3>{item.title}</h3>
-                <div
-                  onClick={() => showPopupHandler(item.id)}
-                  className="moreDetail"
-                >
-                  <p>more details</p>
-                  <img
-                    src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.0.0/png/iconmonstr-arrow-right-lined.png&r=201&g=97&b=222"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            );
-          }
-          return null;
-        })}
-      </div>
-
-      <div className="port-list">
-        {portfolioInfoBack.map((item) => {
-          if (activeTab === "Back-End" || item.category === activeTab) {
-            return (
-              <div
-                key={item.id}
-                className="port"
-                data-aos="zoom-in-up"
-                data-aos-duration="1000"
-              >
-                <img src={item.image} alt={item.title} />
-                <h3>{item.title}</h3>
-                <div
-                  onClick={() => showPopupHandler(item.id)}
-                  className="moreDetail"
-                >
-                  <p>more details</p>
-                  <img
-                    src="https://iconmonstr.com/wp-content/g/gd/makefg.php?i=../releases/preview/7.0.0/png/iconmonstr-arrow-right-lined.png&r=201&g=97&b=222"
-                    alt="arrow"
-                  />
-                </div>
-              </div>
-            );
-          }
-          return null;
-        })}
+            </div>
+          ))}
       </div>
 
       {showPopup && (
         <PopUp
           setShowPopup={setShowPopup}
           activeID={activeID}
-          portfolioInfoFront={portfolioInfoFront}
-          portfolioInfoBack={portfolioInfoBack}
-          conbineForAll={conbineForAll}
+          portfolioInfo={portfolioInfo}
         />
       )}
     </div>

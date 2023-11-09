@@ -1,17 +1,10 @@
-import learning1 from "../src/image/undraw_learning_1.svg";
-import article from "../src/image/undraw_articles.svg";
-import FindaBook from "../src/image/book-2.jpg";
-import staticWeb from "../src/image/static-web.jpg";
-import neatlyVDO from "../src/image/neatly.jpg";
-import jobListing from "../src/image/static-job-listing.jpg";
-import resumeWebsite from "../src/image/resume-web.png";
-
 export const educationAndWork = [
   {
     id: 1,
     name: "Educations",
     year: "2013-2023",
-    image: learning1,
+    image:
+      "https://res.cloudinary.com/dkcstuaym/image/upload/v1699538645/Resume/icon/undraw_learning_1_c1aekq.svg",
     details: [
       {
         id: 1,
@@ -40,7 +33,8 @@ export const educationAndWork = [
     id: 2,
     name: "Work Experience",
     year: "Jun 2021 - Jan 2023",
-    image: article,
+    image:
+      "https://res.cloudinary.com/dkcstuaym/image/upload/v1699538644/Resume/icon/undraw_articles_spfm4k.svg",
     details: [
       {
         id: 1,
@@ -77,66 +71,100 @@ export const mySkillInfo = [
   {
     id: 3,
     title: "Others",
-    program: ["Software Testing", "Version Control with Git and Github"],
+    program: ["Version Control with Git and Github"],
   },
 ];
 
-export const portfolioInfoFront = [
-  // {
-  //   id: 3,
-  //   title: "Resume-Website",
-  //   image: resumeWebsite,
-  //   link: "https://github.com/Tongcnc/Resume-Web-Design",
-  //   linkdemo: "https://tongcnc-resume-dev.netlify.app",
-  //   description:
-  //     "Explore my journey through my resume website. Showcase of my technical prowess and coding skills.",
-  //   tech: ["Javascript", "React", "CSS"],
-  // },
+export const portfolioInfo = [
   {
     id: 5,
-    title: "Education Website",
-    image: staticWeb,
-    link: "https://github.com/techupth/html-css-git-mini-project-html-project-sliver-group2.git",
+    tab: "Front-End",
+    title: "Static Education Website",
+    source: {
+      video:
+        "https://res.cloudinary.com/dkcstuaym/video/upload/v1699537620/Resume/VDO/static-website_wbupkp.mp4",
+      image:
+        "https://res.cloudinary.com/dkcstuaym/image/upload/v1699537021/Resume/images/static-web_mahidr.jpg",
+    },
+    link: "https://github.com/Tongcnc/Static-Education-Website.git",
     linkdemo: "https://future-education-project.netlify.app/",
     description:
-      "Static Education Website | Team mini Project (5 members) | A static education website that provides educational content, resources, and information without dynamic or interactive features.It typically consists of fixed web pages with text, images, and elements, offering information on various educational programs. ",
+      "Team mini Project (5 members) | The Static Education Website that provides educational content, resources, and information various educational programs.",
     tech: ["TailwindCSS", "HTML"],
   },
   {
     id: 4,
+    tab: "Front-End",
     title: "Static Job Listing",
-    image: jobListing,
+    source: {
+      video:
+        "https://res.cloudinary.com/dkcstuaym/video/upload/v1699536077/Resume/VDO/jobListings_zuxcqs.mp4",
+      image:
+        "https://res.cloudinary.com/dkcstuaym/image/upload/v1699537025/Resume/images/static-job-listing_sanyta.jpg",
+    },
     link: "https://github.com/Tongcnc/static-job-listings.git",
     linkdemo: "https://project-static-job-listings.netlify.app/",
     description:
-      "Effortless Job Discovery: Our Website's Advanced Filters and Responsive Design Make Finding Opportunities by Language, Roles, and Tools a Breeze! (Challeange from frontendmentor.io)",
-    tech: ["TailwindCSS", "JavaScript", "React"],
+      "Challeange (frontendmentor.io) | The Job Discovery Website's Advanced Filters and Responsive Design Make Finding Opportunities by Language, Roles, and Tools a Breeze!",
+    tech: ["TailwindCSS", "JavaScript", "React.js"],
   },
-];
-
-export const portfolioInfoBack = [
   {
     id: 1,
+    tab: "Front-End",
     title: "Find a Book",
-    image: FindaBook,
+    source: {
+      video:
+        "https://res.cloudinary.com/dkcstuaym/video/upload/v1699538081/Resume/VDO/FindaBook_c2elsz.mp4",
+      image:
+        "https://res.cloudinary.com/dkcstuaym/image/upload/v1699537021/Resume/images/book-1_qiudxb.jpg",
+    },
     link: "https://github.com/Tongcnc/Findbook-on-Google.git",
     linkdemo: "https://find-a-book-gg.netlify.app",
     description:
-      "With our user-friendly search feature, you can effortlessly find the books in simply enter keywords, titles, or authors, and let our website do the rest, we provide direct links to Google Play",
-    tech: ["CSS", "JavaScript", "React"],
+      "Explore books effortlessly with our user-friendly search. Enter keywords, titles, or authors, and let our API do the work. Find your next read and get direct links to Google Play in just a click!",
+    tech: ["CSS", "JavaScript", "React.js"],
+  },
+  {
+    id: 3,
+    tab: "Full-Stack",
+    title: "Tourist-attraction",
+    source: {
+      video:
+        "https://res.cloudinary.com/dkcstuaym/video/upload/v1699536086/Resume/VDO/tourist-attraction_fpunve.mp4",
+      image:
+        "https://res.cloudinary.com/dkcstuaym/image/upload/v1699537022/Resume/images/tourist_fd2dlg.jpg",
+    },
+    link: "https://github.com/Tongcnc/Tourist-attraction-mini-project",
+    linkdemo: null,
+    description:
+      "Skill-Checkpoint-2 (class-project) | The Tourist attraction website. Effortlessly explore with a simple search for places in Thailand.",
+    tech: [
+      "Vite.js",
+      "React.js",
+      "TailwindCSS",
+      " Mongodb",
+      "Node.js",
+      "Express.js",
+    ],
   },
   {
     id: 2,
+    tab: "Full-Stack",
     title: "Neatly Hotel",
-    image: neatlyVDO,
+    source: {
+      video:
+        "https://res.cloudinary.com/dkcstuaym/video/upload/v1699538067/Resume/VDO/neatly_pb3418.mp4",
+      image:
+        "https://res.cloudinary.com/dkcstuaym/image/upload/v1699537022/Resume/images/neatly_efswgt.jpg",
+    },
     link: "https://github.com/PasinPeat/neatly-website-client.git",
     linkdemo: null,
     description:
-      "Hotel booking Website | Team Project Final (6 members) | A hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
+      "Team Project Final (6 members) | The Hotel website with CRUD features enables users to book rooms, and manage reservations. Offers the user accounts for profile management and admin controls for content management.",
     tech: [
       "Typescript",
-      "React",
-      "Tailwind",
+      "React.js",
+      "TailwindCSS",
       "DaisyUI",
       "MUI",
       "Swiperjs",
